@@ -1,0 +1,82 @@
+[
+  {
+    "name": "JUKI DDL-900",
+    "brand": "JUKI",
+    "category": "Sewing Machine",
+    "price": "Contact Us",
+    "image": "images/machines/juki-ddl900.jpg",
+    "description": "Single Needle Lock Stitch Machine",
+    "specification": "High Speed Industrial Sewing Machine"
+  },
+
+  {
+    "name": "JUKI Overlock",
+    "brand": "JUKI",
+    "category": "Sewing Machine",
+    "price": "Contact Us",
+    "image": "images/machines/juki-overlock.jpg",
+    "description": "Industrial Overlock Machine",
+    "specification": "3/4/5 Thread Overlock Machine"
+  },
+
+  {
+    "name": "JUKI Bartack",
+    "brand": "JUKI",
+    "category": "Sewing Machine",
+    "price": "Contact Us",
+    "image": "images/machines/juki-bartack.jpg",
+    "description": "Automatic Bartack Machine",
+    "specification": "Automatic Reinforcement Stitch Machine"
+  },
+
+  {
+    "name": "Brother S-7300A",
+    "brand": "Brother",
+    "category": "Sewing Machine",
+    "price": "Contact Us",
+    "image": "images/machines/brother-s7300a.jpg",
+    "description": "Electronic Single Needle Machine",
+    "specification": "Direct Drive Lock Stitch Machine"
+  },
+
+  {
+    "name": "Pegasus Overlock",
+    "brand": "Pegasus",
+    "category": "Sewing Machine",
+    "price": "Contact Us",
+    "image": "images/machines/pegasus-overlock.jpg",
+    "description": "Industrial Overlock Machine",
+    "specification": "High Quality Garment Production Machine"
+  },
+
+  {
+    "name": "Spare Parts",
+    "brand": "SHGT",
+    "category": "Spare Parts",
+    "price": "Contact Us",
+    "image": "images/spare-parts/parts.jpg",
+    "description": "Industrial Sewing Machine Spare Parts",
+    "specification": "Original Quality Spare Parts Supply"
+  },
+
+  {
+    "name": "Machine Installation Service",
+    "brand": "SHGT",
+    "category": "Installation",
+    "price": "Contact Us",
+    "image": "images/installation/setup.jpg",
+    "description": "Factory Machine Installation",
+    "specification": "Complete Installation Support"
+  },
+
+  {
+    "name": "Factory Maintenance Service",
+    "brand": "SHGT",
+    "category": "Factory Maintenance",
+    "price": "Contact Us",
+    "image": "images/service/maintenance.jpg",
+    "description": "Garments Factory Maintenance",
+    "specification": "Preventive & Breakdown Maintenance"
+  }
+
+]
