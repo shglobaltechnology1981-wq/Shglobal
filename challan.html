@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHGT Delivery Challan</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<img src="images/logo.png" class="logo">
+
+<h1>SH Global Technology</h1>
+
+<h2>Delivery Challan</h2>
+
+</header>
+
+
+
+<section class="contact">
+
+
+<label>Customer Name</label>
+<br>
+
+<input id="customer" type="text">
+
+
+<br><br>
+
+
+<label>Company Name</label>
+<br>
+
+<input id="company" type="text">
+
+
+<br><br>
+
+
+<label>Delivery Date</label>
+<br>
+
+<input id="date" type="date">
+
+
+<br><br>
+
+
+<label>Product Name</label>
+<br>
+
+<input id="product" type="text">
+
+
+<br><br>
+
+
+<label>Quantity</label>
+<br>
+
+<input id="quantity" type="number" value="1">
+
+
+<br><br>
+
+
+<button onclick="createChallan()">
+
+Generate Challan
+
+</button>
+
+
+
+<div id="challanResult"></div>
+
+
+</section>
+
+
+
+<script src="challan.js"></script>
+
+
+</body>
+
+</html>
