@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Machine - SH Global Technology</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    margin:20px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+h1{
+    text-align:center;
+}
+input{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    margin:20px 0;
+}
+.product{
+    border:1px solid #ddd;
+    margin:10px 0;
+    padding:10px;
+    display:flex;
+    align-items:center;
+}
+.product img{
+    width:120px;
+    margin-right:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔍 Search Sewing Machine</h1>
+
+<input
+type="text"
+id="search"
+placeholder="Search Machine Name..."
+onkeyup="searchMachine()">
+
+<div id="list">
+
+<div class="product">
+<img src="juki-ddl900c.jpg">
+<div>
+<h3>JUKI DDL-9000C</h3>
+<p>Single Needle Lock Stitch Machine</p>
+</div>
+</div>
+
+<div class="product">
+<img src="juki-overlock.jpg">
+<div>
+<h3>JUKI Overlock</h3>
+<p>Industrial Overlock Machine</p>
+</div>
+</div>
+
+<div class="product">
+<img src="juki-buttonhole.jpg">
+<div>
+<h3>JUKI Button Hole</h3>
+<p>Button Hole Machine</p>
+</div>
+</div>
+
+<div class="product">
+<img src="juki-ps800.jpg">
+<div>
+<h3>JUKI PS-800</h3>
+<p>Pattern Sewing Machine</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function searchMachine(){
+
+let input=document.getElementById("search").value.toUpperCase();
+
+let product=document.getElementsByClassName("product");
+
+for(let i=0;i<product.length;i++){
+
+let txt=product[i].innerText;
+
+if(txt.toUpperCase().indexOf(input)>-1){
+
+product[i].style.display="flex";
+
+}else{
+
+product[i].style.display="none";
+
+}
+
+}
+
+}
+</script>
+
+</body>
+</html>
