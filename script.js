@@ -76,7 +76,7 @@ ${product.price}
 
 
 <a class="whatsapp"
-href="https://wa.me/8801XXXXXXXXX?text=I need quotation for ${product.name}">
+href="https://wa.me/8801621007916?text=I need quotation for ${product.name}">
 
 WhatsApp Order
 
