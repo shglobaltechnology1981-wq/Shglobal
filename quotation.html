@@ -4,158 +4,124 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quotation - SH Global Technology</title>
-<link rel="stylesheet" href="style.css">
+
 <style>
 body{
     font-family:Arial,sans-serif;
-    margin:20px;
-    background:#f4f4f4;
-}
-.container{
     max-width:900px;
     margin:auto;
-    background:#fff;
     padding:20px;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+.header{
+    text-align:center;
+    border-bottom:2px solid #004080;
+    padding-bottom:15px;
 }
 .logo{
-    text-align:center;
-}
-.logo img{
-    width:120px;
-}
-h1,h2{
-    text-align:center;
-    margin:5px;
-}
-.info{
-    display:flex;
-    justify-content:space-between;
-    margin:20px 0;
-    flex-wrap:wrap;
-}
-.info div{
-    margin:5px 0;
+    width:80px;
 }
 table{
     width:100%;
     border-collapse:collapse;
+    margin-top:20px;
 }
-table th,table td{
+table,th,td{
     border:1px solid #000;
-    padding:8px;
+}
+th,td{
+    padding:10px;
     text-align:center;
 }
-th{
-    background:#0b6efd;
-    color:#fff;
-}
-.total{
-    text-align:right;
-    margin-top:20px;
-    font-size:18px;
+input{
+    width:100%;
+    padding:6px;
+    border:none;
 }
 button{
     margin-top:20px;
     padding:10px 20px;
-    background:#0b6efd;
+    background:#004080;
     color:#fff;
     border:none;
     cursor:pointer;
 }
-button:hover{
-    background:#084298;
-}
-@media print{
-button{
-display:none;
-}
-body{
-background:#fff;
-}
-}
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<div class="header">
+<img src="logo.png" class="logo">
+<h2>SH Global Technology</h2>
+<p>Industrial Sewing Machine Sales • Spare Parts • Service</p>
 
-<div class="logo">
-<img src="logo.png" alt="Logo">
-<h1>SH GLOBAL TECHNOLOGY</h1>
-<p>Industrial Sewing Machine & Spare Parts Supplier</p>
-<h2>QUOTATION</h2>
+<p>
+Quotation No:
+<b id="qno"></b><br>
+Date:
+<b id="date"></b>
+</p>
 </div>
 
-<div class="info">
-<div>
-Quotation No: __________________
-</div>
+<h3>Customer Information</h3>
 
-<div>
-Date: __________________
-</div>
-</div>
+<p>
+Customer Name:<br>
+<input type="text">
+</p>
 
-<p><strong>Customer Name:</strong> ____________________________</p>
+<p>
+Company Name:<br>
+<input type="text">
+</p>
 
-<p><strong>Company:</strong> _________________________________</p>
+<p>
+Address:<br>
+<input type="text">
+</p>
 
 <table>
 
 <tr>
-<th>SL</th>
-<th>Description</th>
-<th>Model</th>
+<th>Product</th>
 <th>Qty</th>
 <th>Unit Price</th>
-<th>Amount</th>
+<th>Total</th>
 </tr>
 
 <tr>
-<td>1</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
 </tr>
 
 <tr>
-<td>2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
+<td><input></td>
 </tr>
 
 <tr>
-<td>3</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td colspan="3"><b>Grand Total</b></td>
+<td><input></td>
 </tr>
 
 </table>
 
-<div class="total">
-<strong>Grand Total: __________________</strong>
-</div>
+<button onclick="window.print()">
+🖨 Print / Save PDF
+</button>
 
-<br>
+<script>
 
-<p><strong>Prepared By:</strong> __________________</p>
+document.getElementById("date").innerHTML =
+new Date().toLocaleDateString();
 
-<p><strong>Authorized Signature:</strong> __________________</p>
+document.getElementById("qno").innerHTML =
+"QT-" + Date.now();
 
-<button onclick="window.print()">🖨 Print Quotation</button>
-
-</div>
+</script>
 
 </body>
 </html>
