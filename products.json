@@ -1,82 +1,57 @@
 [
   {
-    "name": "JUKI DDL-900",
+    "name": "JUKI DDL-9000C",
     "brand": "JUKI",
-    "category": "Sewing Machine",
     "price": "Contact Us",
-    "image": "images/machines/juki-ddl900.jpg",
-    "description": "Single Needle Lock Stitch Machine",
-    "specification": "High Speed Industrial Sewing Machine"
+    "image": "juki-ddl9000c.jpg",
+    "description": "High Speed Computer Controlled Single Needle Lock Stitch Machine"
   },
 
   {
-    "name": "JUKI Overlock",
+    "name": "JUKI LBH-1790",
     "brand": "JUKI",
-    "category": "Sewing Machine",
     "price": "Contact Us",
-    "image": "images/machines/juki-overlock.jpg",
-    "description": "Industrial Overlock Machine",
-    "specification": "3/4/5 Thread Overlock Machine"
+    "image": "juki-lbh1790.jpg",
+    "description": "Computer Controlled Button Hole Machine"
   },
 
   {
-    "name": "JUKI Bartack",
+    "name": "JUKI LK-1900BN",
     "brand": "JUKI",
-    "category": "Sewing Machine",
     "price": "Contact Us",
-    "image": "images/machines/juki-bartack.jpg",
-    "description": "Automatic Bartack Machine",
-    "specification": "Automatic Reinforcement Stitch Machine"
+    "image": "juki-lk1900bn.jpg",
+    "description": "Computer Controlled Bartack Machine"
+  },
+
+  {
+    "name": "JUKI MO-6714S",
+    "brand": "JUKI",
+    "price": "Contact Us",
+    "image": "juki-mo6714s.jpg",
+    "description": "Industrial Overlock Sewing Machine"
   },
 
   {
     "name": "Brother S-7300A",
     "brand": "Brother",
-    "category": "Sewing Machine",
     "price": "Contact Us",
-    "image": "images/machines/brother-s7300a.jpg",
-    "description": "Electronic Single Needle Machine",
-    "specification": "Direct Drive Lock Stitch Machine"
+    "image": "brother-s7300a.jpg",
+    "description": "Electronic Direct Drive Lock Stitch Machine"
   },
 
   {
-    "name": "Pegasus Overlock",
+    "name": "Pegasus M-900",
     "brand": "Pegasus",
-    "category": "Sewing Machine",
     "price": "Contact Us",
-    "image": "images/machines/pegasus-overlock.jpg",
-    "description": "Industrial Overlock Machine",
-    "specification": "High Quality Garment Production Machine"
+    "image": "pegasus-m900.jpg",
+    "description": "Industrial Overlock Sewing Machine"
   },
 
   {
-    "name": "Spare Parts",
+    "name": "SHGT Machine Service",
     "brand": "SHGT",
-    "category": "Spare Parts",
     "price": "Contact Us",
-    "image": "images/spare-parts/parts.jpg",
-    "description": "Industrial Sewing Machine Spare Parts",
-    "specification": "Original Quality Spare Parts Supply"
-  },
-
-  {
-    "name": "Machine Installation Service",
-    "brand": "SHGT",
-    "category": "Installation",
-    "price": "Contact Us",
-    "image": "images/installation/setup.jpg",
-    "description": "Factory Machine Installation",
-    "specification": "Complete Installation Support"
-  },
-
-  {
-    "name": "Factory Maintenance Service",
-    "brand": "SHGT",
-    "category": "Factory Maintenance",
-    "price": "Contact Us",
-    "image": "images/service/maintenance.jpg",
-    "description": "Garments Factory Maintenance",
-    "specification": "Preventive & Breakdown Maintenance"
+    "image": "service.jpg",
+    "description": "Industrial Sewing Machine Installation & Maintenance Service"
   }
-
 ]
