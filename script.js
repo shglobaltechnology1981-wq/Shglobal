@@ -2,19 +2,15 @@ let allProducts = [];
 
 
 // Load Product Data
-
 fetch("products.json")
-
 .then(response => response.json())
+.then(products => {
 
-.then(data => {
+    allProducts = products;
 
-    allProducts = data;
-
-    displayProducts(allProducts);
+    displayProducts(products);
 
 })
-
 .catch(error => {
 
     console.log(error);
@@ -25,21 +21,22 @@ fetch("products.json")
 });
 
 
-
-
 // Display Product
-
 function displayProducts(products){
-
 
 let productList = document.getElementById("product-list");
 
-
-if(!productList) return;
-
-
 productList.innerHTML = "";
 
+
+if(products.length === 0){
+
+productList.innerHTML =
+"<h3>No Product Found</h3>";
+
+return;
+
+}
 
 
 products.forEach(product => {
@@ -47,26 +44,19 @@ products.forEach(product => {
 
 productList.innerHTML += `
 
-<div class="product-box">
+<div class="product-card">
 
 
-<img src="${product.image}" 
+<img src="${product.image}"
 alt="${product.name}"
-onerror="this.src='images/logo.png'">
+onerror="this.src='logo.png'">
 
 
 <h3>${product.name}</h3>
 
 
-<p><b>Brand:</b> ${product.brand}</p>
-
-
-<p>${product.description}</p>
-
-
 <p>
-<b>Specification:</b><br>
-${product.specification}
+${product.description}
 </p>
 
 
@@ -75,10 +65,11 @@ ${product.price}
 </h4>
 
 
-<a class="whatsapp"
-href="https://wa.me/8801621007916?text=I need quotation for ${product.name}">
+<a class="whatsapp-btn"
+href="https://wa.me/8801621007916?text=I%20need%20${product.name}"
+target="_blank">
 
-WhatsApp Order
+💬 Inquiry
 
 </a>
 
@@ -87,95 +78,89 @@ WhatsApp Order
 
 `;
 
+
 });
 
 
 }
-
 
 
 
 // Search Function
 
-let searchBox = document.getElementById("searchBox");
+document.getElementById("searchBox")
+.addEventListener("keyup", function(){
 
 
-if(searchBox){
+let searchText =
+this.value.toLowerCase();
 
 
-searchBox.addEventListener("keyup", function(){
-
-
-let value = this.value.toLowerCase();
-
-
-
-let filtered = allProducts.filter(product =>
-
-product.name.toLowerCase().includes(value) ||
-
-product.brand.toLowerCase().includes(value)
-
-);
-
-
-
-displayProducts(filtered);
-
+filterProducts(searchText);
 
 
 });
-
-
-}
-
-
 
 
 
 // Brand Filter
 
-
-let brandFilter = document.getElementById("brandFilter");
-
-
-if(brandFilter){
+document.getElementById("brandFilter")
+.addEventListener("change", function(){
 
 
-brandFilter.addEventListener("change", function(){
-
-
-
-let brand = this.value;
-
-
-
-if(brand === "all"){
-
-
-displayProducts(allProducts);
-
-
-}
-
-else{
-
-
-let filtered = allProducts.filter(product =>
-
-product.brand === brand
-
+filterProducts(
+document.getElementById("searchBox").value.toLowerCase()
 );
 
 
-displayProducts(filtered);
+});
 
 
-}
 
+
+// Filter
+
+function filterProducts(searchText){
+
+
+let brand =
+document.getElementById("brandFilter").value;
+
+
+
+let filtered =
+allProducts.filter(product => {
+
+
+let name =
+product.name.toLowerCase();
+
+
+let productBrand =
+product.brand || "";
+
+
+
+let searchMatch =
+name.includes(searchText);
+
+
+
+let brandMatch =
+brand === "all" ||
+productBrand === brand;
+
+
+
+return searchMatch && brandMatch;
 
 
 });
+
+
+
+displayProducts(filtered);
 
 
 }
