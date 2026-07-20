@@ -1,166 +1,86 @@
 let allProducts = [];
 
-
-// Load Product Data
+// Load Products
 fetch("products.json")
 .then(response => response.json())
-.then(products => {
-
-    allProducts = products;
-
-    displayProducts(products);
-
+.then(data => {
+    allProducts = data;
+    displayProducts(allProducts);
 })
 .catch(error => {
-
-    console.log(error);
-
     document.getElementById("product-list").innerHTML =
-    "Product loading failed.";
-
+    "<h3>Products not found.</h3>";
 });
 
-
-// Display Product
+// Display Products
 function displayProducts(products){
 
-let productList = document.getElementById("product-list");
+    let output = "";
 
-productList.innerHTML = "";
+    products.forEach(product => {
 
+        output += `
+        <div class="product-card">
 
-if(products.length === 0){
+            <img src="${product.image}"
+                 alt="${product.name}"
+                 onerror="this.src='logo.png'">
 
-productList.innerHTML =
-"<h3>No Product Found</h3>";
+            <h3>${product.name}</h3>
 
-return;
+            <p>${product.description}</p>
 
+            <h4>${product.price}</h4>
+
+            <a class="btn"
+            href="https://wa.me/8801621007916?text=I need ${product.name}"
+            target="_blank">
+
+            WhatsApp Inquiry
+
+            </a>
+
+        </div>
+        `;
+    });
+
+    document.getElementById("product-list").innerHTML = output;
 }
 
+// Search
+document.getElementById("searchBox").addEventListener("keyup", function(){
 
-products.forEach(product => {
-
-
-productList.innerHTML += `
-
-<div class="product-card">
-
-
-<img src="${product.image}"
-alt="${product.name}"
-onerror="this.src='logo.png'">
-
-
-<h3>${product.name}</h3>
-
-
-<p>
-${product.description}
-</p>
-
-
-<h4>
-${product.price}
-</h4>
-
-
-<a class="whatsapp-btn"
-href="https://wa.me/8801621007916?text=I%20need%20${product.name}"
-target="_blank">
-
-💬 Inquiry
-
-</a>
-
-
-</div>
-
-`;
-
+    filterProducts();
 
 });
-
-
-}
-
-
-
-// Search Function
-
-document.getElementById("searchBox")
-.addEventListener("keyup", function(){
-
-
-let searchText =
-this.value.toLowerCase();
-
-
-filterProducts(searchText);
-
-
-});
-
-
 
 // Brand Filter
+document.getElementById("brandFilter").addEventListener("change", function(){
 
-document.getElementById("brandFilter")
-.addEventListener("change", function(){
-
-
-filterProducts(
-document.getElementById("searchBox").value.toLowerCase()
-);
-
+    filterProducts();
 
 });
 
+function filterProducts(){
 
+    let search =
+    document.getElementById("searchBox").value.toLowerCase();
 
+    let brand =
+    document.getElementById("brandFilter").value;
 
-// Filter
+    let filtered = allProducts.filter(product => {
 
-function filterProducts(searchText){
+        let matchName =
+        product.name.toLowerCase().includes(search);
 
+        let matchBrand =
+        brand === "all" || product.brand === brand;
 
-let brand =
-document.getElementById("brandFilter").value;
+        return matchName && matchBrand;
 
+    });
 
-
-let filtered =
-allProducts.filter(product => {
-
-
-let name =
-product.name.toLowerCase();
-
-
-let productBrand =
-product.brand || "";
-
-
-
-let searchMatch =
-name.includes(searchText);
-
-
-
-let brandMatch =
-brand === "all" ||
-productBrand === brand;
-
-
-
-return searchMatch && brandMatch;
-
-
-});
-
-
-
-displayProducts(filtered);
-
+    displayProducts(filtered);
 
 }
