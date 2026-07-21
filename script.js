@@ -33,8 +33,7 @@ function displayProducts(products){
             <h4>${product.price}</h4>
 
             <a class="btn"
-            href="https://wa.me/8801621007916?text=I need ${product.name}"
-            target="_blank">
+            href="https://wa.me/8801621007916?text=${encodeURIComponent('I need ' + product.name)}"
 
             WhatsApp Inquiry
 
