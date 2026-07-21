@@ -28,6 +28,50 @@
     "description": "Industrial Overlock Machine"
   },
   {
+    
+    "name": "Brother S-7300A",
+    "brand": "Brother",
+    "price": "Contact Us",
+    "image": "brother-s7300a.jpg",
+    "description": "Electronic Direct Drive Lock Stitch Machine"
+  },
+  {
+    "name": "Pegasus M900",
+    "brand": "Pegasus",
+    "price": "Contact Us",
+    "image": "pegasus-m900.jpg",
+    "description": "Industrial Overlock Sewing Machine"
+  },
+
+  {
+    "name": "JUKI DDL-9000C",
+    "brand": "JUKI",
+    "price": "Contact Us",
+    "image": "juki-ddl9000c.jpg",
+    "description": "High Speed Computer Controlled Single Needle Lock Stitch Machine"
+  },
+  {
+    "name": "JUKI Button Hole",
+    "brand": "JUKI",
+    "price": "Contact Us",
+    "image": "juki-buttonhole.jpg",
+    "description": "Industrial Button Hole Machine"
+  },
+  {
+    "name": "JUKI Bartack",
+    "brand": "JUKI",
+    "price": "Contact Us",
+    "image": "juki-bartack.jpg",
+    "description": "Industrial Bartack Machine"
+  },
+  {
+    "name": "JUKI Overlock",
+    "brand": "JUKI",
+    "price": "Contact Us",
+    "image": "juki-overlock.jpg",
+    "description": "Industrial Overlock Machine"
+  },
+  {
     "name": "Brother S-7300A",
     "brand": "Brother",
     "price": "Contact Us",
@@ -41,4 +85,5 @@
     "image": "pegasus-m900.jpg",
     "description": "Industrial Overlock Sewing Machine"
   }
+]
 ]
