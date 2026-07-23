@@ -1,187 +1,300 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spare Parts - SH Global Technology</title>
+
+<title>Genuine Spare Parts | SH Global Technology</title>
+
+<link rel="icon" href="images/favicon.png">
 
 <link rel="stylesheet" href="style.css">
 
-<style>
-
-body{
-    font-family:Arial,sans-serif;
-    margin:0;
-    background:#f5f5f5;
-}
-
-.header{
-    background:#004080;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-.logo{
-    width:90px;
-}
-
-nav{
-    background:#222;
-    padding:12px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:8px;
-    font-weight:bold;
-}
-
-.container{
-    width:95%;
-    margin:auto;
-    padding:20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    padding:15px;
-    text-align:center;
-    box-shadow:0 2px 8px rgba(0,0,0,.2);
-}
-
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:contain;
-}
-
-.btn{
-    display:inline-block;
-    background:#004080;
-    color:white;
-    text-decoration:none;
-    padding:10px 18px;
-    border-radius:5px;
-}
-
-.footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
-<img src="logo.png" class="logo">
+<div class="logo">
+
+<img src="images/logo.png" alt="SH Global Technology">
+
+<div>
 
 <h1>SH Global Technology</h1>
 
-<p>Industrial Sewing Machine Spare Parts</p>
+<p>Genuine Industrial Sewing Machine Spare Parts</p>
+
+</div>
+
+</div>
+
+<div class="header-contact">
+
+<a href="tel:+8801621007917">
+
+<i class="fa-solid fa-phone"></i>
+
++8801621007917
+
+</a>
+
+<a href="https://wa.me/8801621007916" target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+</div>
 
 </header>
 
-<nav>
+<!-- HERO -->
 
-<a href="index.html">🏠 Home</a>
-<a href="machinery.html">🧵 Machinery</a>
-<a href="catalogue.html">📖 Catalogue</a>
-<a href="contact.html">☎ Contact</a>
+<section class="hero">
 
-</nav>
+<h2>
 
-<div class="container">
+Genuine Spare Parts
 
-<h2 align="center">Industrial Sewing Machine Spare Parts</h2>
+</h2>
 
-<div class="grid">
+<p>
 
-<div class="card">
-<img src="logo.png">
-<h3>Hook</h3>
-<p>Industrial Sewing Machine Hook</p>
-<a href="contact.html" class="btn">Contact</a>
+All Brands Genuine Sewing Machine Spare Parts
+
+</p>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<h2>
+
+Search Spare Parts
+
+</h2>
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Spare Parts..."
+onkeyup="searchProduct()">
+
+</section>
+
+<!-- PRODUCT GRID -->
+
+<section class="section">
+
+<h2>
+
+Featured Spare Parts
+
+</h2>
+
+<div class="product-grid">
+    <!-- ================= ROTARY HOOK ================= -->
+
+<div class="product-card">
+<img src="images/rotary-hook.jpg" alt="Rotary Hook">
+<h3>Rotary Hook</h3>
+<p>Genuine Rotary Hook - All Brands</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
 </div>
 
-<div class="card">
-<img src="logo.png">
+<!-- ================= BOBBIN CASE ================= -->
+
+<div class="product-card">
+<img src="images/bobbin-case.jpg" alt="Bobbin Case">
 <h3>Bobbin Case</h3>
-<p>Original Bobbin Case</p>
-<a href="contact.html" class="btn">Contact</a>
+<p>Industrial Sewing Machine Bobbin Case</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
 </div>
 
-<div class="card">
-<img src="logo.png">
-<h3>Needle Plate</h3>
-<p>High Quality Needle Plate</p>
-<a href="contact.html" class="btn">Contact</a>
+<!-- ================= NEEDLE ================= -->
+
+<div class="product-card">
+<img src="images/needle.jpg" alt="Needle">
+<h3>Sewing Needles</h3>
+<p>Organ • Groz-Beckert • Schmetz</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
 </div>
 
-<div class="card">
-<img src="logo.png">
-<h3>Feed Dog</h3>
-<p>Industrial Feed Dog</p>
-<a href="contact.html" class="btn">Contact</a>
-</div>
+<!-- ================= LOOPER ================= -->
 
-<div class="card">
-<img src="logo.png">
-<h3>Presser Foot</h3>
-<p>Original Presser Foot</p>
-<a href="contact.html" class="btn">Contact</a>
-</div>
-
-<div class="card">
-<img src="logo.png">
-<h3>Knife Set</h3>
-<p>Overlock Knife Set</p>
-<a href="contact.html" class="btn">Contact</a>
-</div>
-
-<div class="card">
-<img src="logo.png">
+<div class="product-card">
+<img src="images/looper.jpg" alt="Looper">
 <h3>Looper</h3>
-<p>Overlock Looper</p>
-<a href="contact.html" class="btn">Contact</a>
+<p>Overlock Genuine Looper</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
 </div>
 
-<div class="card">
-<img src="logo.png">
-<h3>Timing Belt</h3>
-<p>Industrial Machine Belt</p>
-<a href="contact.html" class="btn">Contact</a>
+<!-- ================= PRESSER FOOT ================= -->
+
+<div class="product-card">
+<img src="images/presser-foot.jpg" alt="Presser Foot">
+<h3>Presser Foot</h3>
+<p>All Types Industrial Presser Foot</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+</div>
+
+<!-- ================= FEED DOG ================= -->
+
+<div class="product-card">
+<img src="images/feed-dog.jpg" alt="Feed Dog">
+<h3>Feed Dog</h3>
+<p>High Quality Feed Dog</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+</div>
+
+<!-- ================= NEEDLE PLATE ================= -->
+
+<div class="product-card">
+<img src="images/needle-plate.jpg" alt="Needle Plate">
+<h3>Needle Plate</h3>
+<p>Industrial Sewing Machine Needle Plate</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+</div>
+
+<!-- ================= KNIFE ================= -->
+
+<div class="product-card">
+<img src="images/knife.jpg" alt="Knife">
+<h3>Upper & Lower Knife</h3>
+<p>Overlock Machine Knife Set</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+</div>
+
+<!-- ================= SERVO MOTOR ================= -->
+
+<div class="product-card">
+<img src="images/servo-motor.jpg" alt="Servo Motor">
+<h3>Servo Motor</h3>
+<p>550W Energy Saving Servo Motor</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+</div>
+
+<!-- ================= ATTACHMENTS ================= -->
+
+<div class="product-card">
+<img src="images/attachments.jpg" alt="Attachments">
+<h3>Attachments Set</h3>
+<p>Folders • Guides • Binders</p>
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
 </div>
 
 </div>
 
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+
+<p>
+<i class="fa-solid fa-phone"></i>
+<strong> Call:</strong>
+<a href="tel:+8801621007917">
++8801621007917
+</a>
+</p>
+
+<p>
+<i class="fa-brands fa-whatsapp"></i>
+<strong> WhatsApp:</strong>
+<a href="https://wa.me/8801621007916" target="_blank">
++8801621007916
+</a>
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+<strong> Address:</strong><br>
+Uttara House Building<br>
+Near Public College Rail Gate<br>
+Dhaka, Bangladesh
+</p>
+
+<p>
+<a href="#" class="facebook-btn">
+<i class="fa-brands fa-facebook"></i>
+SH Global Technology
+</a>
+</p>
+
 </div>
 
-<footer class="footer">
+</section>
 
-<p><strong>SH Global Technology</strong></p>
+<!-- Floating WhatsApp -->
 
-<p>Industrial Sewing Machine Spare Parts Supplier</p>
+<a href="https://wa.me/8801621007916"
+class="floating-whatsapp"
+target="_blank">
 
-<p>© 2026 All Rights Reserved.</p>
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- Floating Call -->
+
+<a href="tel:+8801621007917"
+class="floating-call">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 SH Global Technology
+
+<br>
+
+Industrial Sewing Machines & Genuine Spare Parts
+
+<br>
+
+All Rights Reserved.
+
+</p>
 
 </footer>
 
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
