@@ -1,0 +1,11 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /invoice.html
+Disallow: /quotation.html
+Disallow: /challan.html
+
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
