@@ -1,106 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SH Global Technology - Admin Login</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-}
-.login-box{
-    width:350px;
-    margin:100px auto;
-    background:#fff;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-}
-.logo{
-    display:block;
-    width:80px;
-    margin:0 auto 15px;
-}
-h2{
-    text-align:center;
-    color:#004080;
-}
-input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
-    box-sizing:border-box;
-}
-button{
-    width:100%;
-    padding:12px;
-    background:#004080;
-    color:white;
-    border:none;
-    border-radius:5px;
-    font-size:16px;
-    cursor:pointer;
-}
-button:hover{
-    background:#0066cc;
-}
-.footer{
-    text-align:center;
-    margin-top:15px;
-    color:#666;
-    font-size:14px;
-}
-</style>
+<title>Admin Login | SH Global Technology</title>
+
+<link rel="icon" href="images/favicon.png">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<div class="login-box">
+<header class="header">
 
-<img src="logo.png" class="logo" alt="Logo">
+<div class="logo">
 
-<h2>Admin Login</h2>
+<img src="images/logo.png" alt="SH Global Technology">
 
-<input type="text" id="username" placeholder="Username">
+<div>
 
-<input type="password" id="password" placeholder="Password">
+<h1>SH Global Technology</h1>
 
-<button onclick="login()">Login</button>
-
-<div class="footer">
-SH Global Technology
-</div>
+<p>Admin Control Panel</p>
 
 </div>
 
-<script>
+</div>
 
-function login(){
+</header>
 
-let user=document.getElementById("username").value.trim();
+<section class="hero">
 
-let pass=document.getElementById("password").value.trim();
+<h2>Administrator Login</h2>
 
-if(user==="admin" && pass==="12345"){
+<p>Authorized Users Only</p>
 
-localStorage.setItem("admin","yes");
+</section>
 
-window.location.href="admin.html";
+<section class="section">
 
-}else{
+<div class="contact-box">
 
-alert("Invalid Username or Password");
+<h2 style="text-align:center;">Login</h2>
 
-}
+<form action="admin.html">
 
-}
+<input
+type="text"
+placeholder="Username"
+required
+style="width:100%;padding:15px;margin-bottom:15px;">
 
-</script>
+<input
+type="password"
+placeholder="Password"
+required
+style="width:100%;padding:15px;margin-bottom:20px;">
+<button
+type="submit"
+class="call-btn"
+style="width:100%;border:none;cursor:pointer;">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+Login
+
+</button>
+
+</form>
+
+<p style="text-align:center;margin-top:20px;">
+
+<a href="#" style="text-decoration:none;color:#0b3d91;">
+
+Forgot Password?
+
+</a>
+
+</p>
+
+<hr style="margin:30px 0;">
+
+<h3 style="text-align:center;color:#0b3d91;">
+
+Security Notice
+
+</h3>
+
+<p style="text-align:center;line-height:1.8;">
+
+This Admin Panel is restricted to authorized personnel only.
+Unauthorized access is prohibited.
+
+</p>
+
+<hr style="margin:30px 0;">
+
+<h3 style="text-align:center;color:#0b3d91;">
+
+Administrator Contact
+
+</h3>
+
+<p style="text-align:center;">
+
+<i class="fa-solid fa-phone"></i>
+
++8801621007917
+
+</p>
+
+<p style="text-align:center;">
+
+<i class="fa-brands fa-whatsapp"></i>
+
++8801621007916
+
+</p>
+
+</div>
+
+</section>
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/8801621007916"
+class="floating-whatsapp"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- Floating Call -->
+
+<a href="tel:+8801621007917"
+class="floating-call">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 SH Global Technology
+
+<br>
+
+Industrial Sewing Machines & Genuine Spare Parts
+
+<br>
+
+Admin Control Panel
+
+</p>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
