@@ -1,204 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Machinery - SH Global Technology</title>
+<title>Industrial Sewing Machinery | SH Global Technology</title>
+
+<link rel="icon" href="images/favicon.png">
 
 <link rel="stylesheet" href="style.css">
 
-<style>
-
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-}
-
-header{
-    background:#004080;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-nav{
-    background:#222;
-    text-align:center;
-    padding:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:10px;
-    font-weight:bold;
-}
-
-.container{
-    width:95%;
-    margin:auto;
-    padding:20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.2);
-    padding:15px;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:contain;
-}
-
-.card h3{
-    margin:10px 0;
-}
-
-.card p{
-    color:#555;
-}
-
-.price{
-    color:red;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 20px;
-    background:#004080;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-}
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+<!-- HEADER -->
 
-<img src="logo.png" width="90">
+<header class="header">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="SH Global Technology">
+
+<div>
 
 <h1>SH Global Technology</h1>
 
-<p>Industrial Sewing Machines</p>
-
-</header>
-
-<nav>
-
-<a href="index.html">🏠 Home</a>
-
-<a href="catalogue.html">📖 Catalogue</a>
-
-<a href="gallery.html">🖼 Gallery</a>
-
-<a href="contact.html">☎ Contact</a>
-
-</nav>
-
-<div class="container">
-
-<h2 align="center">
-Industrial Sewing Machines
-</h2>
-
-<div id="product-list" class="grid">
-
-Loading Products...
+<p>Industrial Sewing Machines & Genuine Spare Parts</p>
 
 </div>
 
 </div>
 
-<footer>
+<div class="header-contact">
 
-© 2026 SH Global Technology
+<a href="tel:+8801621007917">
 
-</footer>
+<i class="fa-solid fa-phone"></i>
 
-<script>
++8801621007917
 
-fetch("products.json")
+</a>
 
-.then(response=>response.json())
+<a href="https://wa.me/8801621007916" target="_blank">
 
-.then(products=>{
+<i class="fa-brands fa-whatsapp"></i>
 
-let html="";
-
-products.forEach(product=>{
-
-html+=`
-
-<div class="card">
-
-<img src="${product.image}"
-
-alt="${product.name}"
-
-onerror="this.src='logo.png'">
-
-<h3>${product.name}</h3>
-
-<p>${product.description}</p>
-
-<div class="price">
-
-${product.price}
-
-</div>
-
-<a href="contact.html"
-
-class="btn">
-
-Contact Now
+WhatsApp
 
 </a>
 
 </div>
 
-`;
+</header>
 
-});
+<!-- PAGE TITLE -->
 
-document.getElementById("product-list").innerHTML=html;
+<section class="hero">
 
-})
+<h2>
 
-.catch(error=>{
+Industrial Sewing Machinery
 
-document.getElementById("product-list").innerHTML="Products Not Found.";
+</h2>
 
-});
+<p>
 
-</script>
+JUKI • Brother • Pegasus • Kansai Special • Typical
+
+</p>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<h2>
+
+Search Machinery
+
+</h2>
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Machine..."
+onkeyup="searchProduct()">
+
+</section>
+
+<!-- PRODUCT GRID -->
+
+<section class="section">
+
+<h2>
+
+Industrial Machines
+
+</h2>
+
+<div class="product-grid">
+   <!-- ================= JUKI ================= -->
+
+<div class="product-card">
+
+<img src="images/juki-ddl9000c.jpg" alt="JUKI DDL-9000C">
+
+<h3>JUKI DDL-9000C</h3>
+
+<p>Computerized Single Needle Lock Stitch Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= BROTHER ================= -->
+
+<div class="product-card">
+
+<img src="images/brother-s7300a.jpg" alt="Brother S-7300A">
+
+<h3>Brother S-7300A</h3>
+
+<p>Direct Drive Lock Stitch Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= PEGASUS ================= -->
+
+<div class="product-card">
+
+<img src="images/pegasus-m700.jpg" alt="Pegasus M700">
+
+<h3>Pegasus M700</h3>
+
+<p>High Speed Overlock Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= KANSAI ================= -->
+
+<div class="product-card">
+
+<img src="images/kansai-dfb1404.jpg" alt="Kansai Special">
+
+<h3>Kansai Special DFB-1404</h3>
+
+<p>Flat Bed Interlock Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= FEED OFF ARM ================= -->
+
+<div class="product-card">
+
+<img src="images/feed-off-arm.jpg" alt="Feed Off Arm">
+
+<h3>Feed Off The Arm</h3>
+
+<p>Industrial Feed Off The Arm Sewing Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= BUTTON HOLE ================= -->
+
+<div class="product-card">
+
+<img src="images/button-hole.jpg" alt="Button Hole Machine">
+
+<h3>Button Hole Machine</h3>
+
+<p>Computerized Button Hole Sewing Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= BARTACK ================= -->
+
+<div class="product-card">
+
+<img src="images/bartack.jpg" alt="Bartack Machine">
+
+<h3>Bartack Machine</h3>
+
+<p>Electronic Bartack Sewing Machine</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+<!-- ================= FUSING ================= -->
+
+<div class="product-card">
+
+<img src="images/ns2410.jpg" alt="Rotary Fusing Machine">
+
+<h3>Rotary Fusing Machine</h3>
+
+<p>NS-2410 Industrial Rotary Fusing Press</p>
+
+<a href="tel:+8801621007917" class="call-btn">Call Now</a>
+
+<a href="https://wa.me/8801621007916" class="whatsapp-btn" target="_blank">WhatsApp</a>
+
+</div>
+
+</div>
+
+</section>
+  <!-- ================= CONTACT ================= -->
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+
+<p>
+<i class="fa-solid fa-phone"></i>
+<strong> Call:</strong>
+<a href="tel:+8801621007917">
++8801621007917
+</a>
+</p>
+
+<p>
+<i class="fa-brands fa-whatsapp"></i>
+<strong> WhatsApp:</strong>
+<a href="https://wa.me/8801621007916" target="_blank">
++8801621007916
+</a>
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+<strong> Address:</strong><br>
+Uttara House Building<br>
+Near Public College Rail Gate<br>
+Dhaka, Bangladesh
+</p>
+
+<p>
+<a href="#" class="facebook-btn">
+<i class="fa-brands fa-facebook"></i>
+SH Global Technology
+</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/8801621007916"
+class="floating-whatsapp"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- Floating Call -->
+
+<a href="tel:+8801621007917"
+class="floating-call">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© 2026 SH Global Technology
+
+<br>
+
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-</html>
+
+</html>  
