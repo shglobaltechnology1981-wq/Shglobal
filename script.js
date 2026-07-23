@@ -144,3 +144,78 @@ section.style.transition="all .6s ease";
 observer.observe(section);
 
 });
+/*==========================================
+BACK TO TOP BUTTON
+==========================================*/
+
+const backToTop = document.createElement("button");
+
+backToTop.innerHTML = "↑";
+
+backToTop.id = "backToTop";
+
+document.body.appendChild(backToTop);
+
+backToTop.style.position = "fixed";
+backToTop.style.right = "20px";
+backToTop.style.bottom = "160px";
+backToTop.style.width = "50px";
+backToTop.style.height = "50px";
+backToTop.style.border = "none";
+backToTop.style.borderRadius = "50%";
+backToTop.style.background = "#0b3d91";
+backToTop.style.color = "#fff";
+backToTop.style.fontSize = "22px";
+backToTop.style.cursor = "pointer";
+backToTop.style.display = "none";
+backToTop.style.zIndex = "999";
+
+window.addEventListener("scroll", function () {
+
+if (window.scrollY > 300) {
+
+backToTop.style.display = "block";
+
+} else {
+
+backToTop.style.display = "none";
+
+}
+
+});
+
+backToTop.addEventListener("click", function () {
+
+window.scrollTo({
+
+top: 0,
+
+behavior: "smooth"
+
+});
+
+});
+
+/*==========================================
+CURRENT YEAR FOOTER
+==========================================*/
+
+const footer = document.querySelector("footer p");
+
+if (footer) {
+
+footer.innerHTML =
+"© " + new Date().getFullYear() +
+" SH Global Technology<br>All Rights Reserved.";
+
+}
+
+/*==========================================
+CONSOLE MESSAGE
+==========================================*/
+
+console.log("SH Global Technology Website Loaded Successfully");
+
+/*==========================================
+END OF SCRIPT.JS
+==========================================*/
