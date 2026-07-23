@@ -1,132 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quotation - SH Global Technology</title>
 
-<style>
-body{
-    font-family:Arial,sans-serif;
-    max-width:900px;
-    margin:auto;
-    padding:20px;
-}
-.header{
-    text-align:center;
-    border-bottom:2px solid #004080;
-    padding-bottom:15px;
-}
-.logo{
-    width:80px;
-}
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
-table,th,td{
-    border:1px solid #000;
-}
-th,td{
-    padding:10px;
-    text-align:center;
-}
-input{
-    width:100%;
-    padding:6px;
-    border:none;
-}
-button{
-    margin-top:20px;
-    padding:10px 20px;
-    background:#004080;
-    color:#fff;
-    border:none;
-    cursor:pointer;
-}
-</style>
+<title>Price Quotation | SH Global Technology</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<div class="header">
-<img src="logo.png" class="logo">
-<h2>SH Global Technology</h2>
-<p>Industrial Sewing Machine Sales • Spare Parts • Service</p>
+<div class="invoice">
 
-<p>
-Quotation No:
-<b id="qno"></b><br>
-Date:
-<b id="date"></b>
-</p>
-</div>
+<h1 style="text-align:center;">SH GLOBAL TECHNOLOGY</h1>
 
-<h3>Customer Information</h3>
-
-<p>
-Customer Name:<br>
-<input type="text">
+<p style="text-align:center;">
+Industrial Sewing Machines & Genuine Spare Parts
 </p>
 
-<p>
-Company Name:<br>
-<input type="text">
-</p>
+<hr>
 
-<p>
-Address:<br>
-<input type="text">
-</p>
-
-<table>
+<table width="100%">
 
 <tr>
-<th>Product</th>
-<th>Qty</th>
-<th>Unit Price</th>
-<th>Total</th>
+
+<td>
+
+<strong>Quotation No:</strong> __________
+
+</td>
+
+<td align="right">
+
+<strong>Date:</strong> __________
+
+</td>
+
 </tr>
 
 <tr>
-<td><input></td>
-<td><input></td>
-<td><input></td>
-<td><input></td>
+
+<td>
+
+<strong>Customer Name:</strong> ______________________
+
+</td>
+
+<td align="right">
+
+<strong>Mobile:</strong> ______________________
+
+</td>
+
 </tr>
 
 <tr>
-<td><input></td>
-<td><input></td>
-<td><input></td>
-<td><input></td>
+
+<td colspan="2">
+
+<strong>Company:</strong> _______________________________
+
+</td>
+
 </tr>
 
 <tr>
-<td colspan="3"><b>Grand Total</b></td>
-<td><input></td>
+
+<td colspan="2">
+
+<strong>Address:</strong> ____________________________________________
+
+</td>
+
 </tr>
-<tr>
-    <td colspan="4">
-        <b>Remark:</b><br>
-        <textarea rows="4" style="width:100%;" placeholder="Write remarks here..."></textarea>
-    </td>
-</tr>
+
 </table>
 
-<button onclick="window.print()">
-🖨 Print / Save PDF
+<br>
+
+<table border="1" width="100%" cellspacing="0" cellpadding="8">
+
+<tr>
+
+<th>SL</th>
+
+<th>Product Description</th>
+
+<th>Qty</th>
+
+<th>Unit Price</th>
+
+<th>Total</th>
+
+</tr>
+
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+
+<td colspan="4" align="right">
+
+<strong>Sub Total</strong>
+
+</td>
+
+<td>____________</td>
+
+</tr>
+
+<tr>
+
+<td colspan="4" align="right">
+
+<strong>Discount</strong>
+
+</td>
+
+<td>____________</td>
+
+</tr>
+
+<tr>
+
+<td colspan="4" align="right">
+
+<strong>Grand Total</strong>
+
+</td>
+
+<td><strong>____________</strong></td>
+
+</tr>
+
+</table>
+
+<br>
+
+<h3>Terms & Conditions</h3>
+
+<ul>
+
+<li>This quotation is valid for 30 days from the quotation date.</li>
+
+<li>Prices are subject to stock availability.</li>
+
+<li>Delivery time: As per stock availability or mutual agreement.</li>
+
+<li>Payment Terms: Cash / Bank Transfer / As Agreed.</li>
+
+<li>Warranty applies only to eligible products.</li>
+
+</ul>
+
+<br>
+
+<table width="100%">
+
+<tr>
+
+<td>
+
+<strong>Delivery Time:</strong>
+
+________________________
+
+</td>
+
+<td align="right">
+
+<strong>Validity:</strong>
+
+30 Days
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<strong>Payment Terms:</strong>
+
+________________________
+
+</td>
+
+<td align="right">
+
+<strong>Delivery Place:</strong>
+
+________________________
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<table width="100%">
+
+<tr>
+
+<td align="left">
+
+________________________<br>
+
+Prepared By
+
+</td>
+
+<td align="center">
+
+________________________<br>
+
+Authorized Signature
+
+</td>
+
+<td align="right">
+
+________________________<br>
+
+Customer Acceptance
+
+</td>
+
+</tr>
+
+</table>
+<br>
+
+<div style="text-align:center; margin:30px 0;">
+
+<button
+onclick="window.print()"
+class="call-btn"
+style="border:none;cursor:pointer;margin-right:10px;">
+
+🖨 Print Quotation
+
 </button>
 
-<script>
+<a
+href="admin.html"
+class="whatsapp-btn"
+style="text-decoration:none;">
 
-document.getElementById("date").innerHTML =
-new Date().toLocaleDateString();
+⬅ Back to Admin
 
-document.getElementById("qno").innerHTML =
-"QT-" + Date.now();
+</a>
 
-</script>
+</div>
+
+<hr>
+
+<footer style="text-align:center;padding:20px;">
+
+<p>
+
+<strong>SH GLOBAL TECHNOLOGY</strong><br>
+
+Industrial Sewing Machines & Genuine Spare Parts<br>
+
+Uttara House Building, Near Public College Rail Gate<br>
+
+Mobile: +8801621007917<br>
+
+WhatsApp: +8801621007916
+
+</p>
+
+<p>
+
+© 2026 SH Global Technology. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</div>
 
 </body>
+
 </html>
