@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SH Global Technology | Sewing Machine Catalogue</title>
+<title>SH Global Technology | Catalogue</title>
 
 <link rel="icon" href="favicon.png">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,7 +18,7 @@
 
 <header class="header">
 
-<img src="logo.png" class="logo" alt="SH Global Technology">
+<img src="logo.png" alt="SH Global Technology" class="logo">
 
 <h1>SH Global Technology</h1>
 
@@ -25,232 +27,45 @@
 </header>
 
 <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="machinery.html">Machinery</a>
-    <a href="catalogue.html">PDF Library</a>
-    <a href="spareparts.html">Spare Parts</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+
+<a href="index.html">Home</a>
+
+<a href="catalogue.html">Catalogue</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="quotation.html">Quotation</a>
+
+<a href="invoice.html">Invoice</a>
+
+<a href="challan.html">Challan</a>
+
+<a href="contact.html">Contact</a>
+
 </nav>
-
-<section class="pdf-library">
-
-<h1>📚 PDF Catalogue Library</h1>
-
-<h2>🧵 Machine Catalogues</h2>
-
-<ul>
-
-<li>
-<a href="pdf/Machine-Matalogue-1.pdf" target="_blank">
-📖 Machine Catalogue-1
-</a>
-</li>
-
-<li>
-<a href="pdf/Machine-Catalogue-2.pdf" target="_blank">
-📖 Machine Catalogue-2
-</a>
-</li>
-
-<li>
-<a href="pdf/Machine-Catalogue-3.pdf" target="_blank">
-📖 Machine Catalogue-3
-</a>
-</li>
-
-</ul>
-
-<h2>⚙️ Spare Parts Catalogues</h2>
-
-<ul>
-
-<li>
-<a href="pdf/Spare-parts-Catalogue-1.pdf" target="_blank">
-⚙️ Spare Parts Catalogue-1
-</a>
-</li>
-
-<li>
-<a href="pdf/Spare-Parts-Catalogue-2.pdf" target="_blank">
-⚙️ Spare Parts Catalogue-2
-</a>
-</li>
-
-<li>
-<a href="pdf/Spare-Parts-Catalogue-3.pdf" target="_blank">
-⚙️ Spare Parts Catalogue-3
-</a>
-</li>
-
-</ul>
-
-<h2>💨 Air Compressor</h2>
-
-<ul>
-
-<li>
-<a href="pdf/Air-Compressor-Catalogue.pdf" target="_blank">
-💨 Air Compressor Catalogue
-</a>
-</li>
-
-<li>
-<a href="pdf/Air-Compressor-Spare-Parts.pdf" target="_blank">
-⚙️ Air Compressor Spare Parts
-</a>
-</li>
-
-</ul>
-
-<h2>🔥 Boiler</h2>
-
-<ul>
-
-<li>
-<a href="pdf/Boiler-Catalogue.pdf" target="_blank">
-🔥 Boiler Catalogue
-</a>
-</li>
-
-<li>
-<a href="pdf/Boiler-Spare-Parts.pdf" target="_blank">
-⚙️ Boiler Spare Parts
-</a>
-</li>
-
-</ul>
-
-<h2>✂️ Plotter</h2>
-
-<ul>
-
-<li>
-<a href="pdf/Plotter-Catalogue.pdf" target="_blank">
-✂️ Plotter Catalogue
-</a>
-</li>
-
-<li>
-<a href="pdf/Plotter-Spare-Parts.pdf" target="_blank">
-⚙️ Plotter Spare Parts
-</a>
-</li>
-
-</ul>
-
-</section>
-
 
 <section class="about">
 
-<h2>Industrial Sewing Machine Catalogue</h2>
-
-<p>
-Browse our industrial sewing machine collection or download the latest catalogue.
-</p>
-
-<br>
-
-<h2>📚 Machine Catalogue</h2>
-
-<a href="pdf/Machine-Catalogue-1.pdf" target="_blank">
-📖 Machine Catalogue-1
-</a>
-
-<br><br>
-
-<a href="pdf/Machine-Catalogue-2.pdf" target="_blank">
-📖 Machine Catalogue-2
-</a>
-
-<br><br>
-
-<a href="pdf/Machine-Catalogue-3.pdf" target="_blank">
-📖 Machine Catalogue-3
-</a>
-    
-<br><br>
-
-<a href="pdf/Spare-Parts-Catalogue-1.pdf" target="_blank">
-⚙️ Spare Parts Catalogue-1
-</a>
-
-<br><br>
- 
-<a href="pdf/Spare-Parts-Catalogue-2.pdf" target="_blank">
-⚙️ Spare Parts Catalogue-2
-</a>
-  
-<br><br>
-
-<a href="pdf/Spare-Parts-Catalogue-3.pdf" target="_blank">
-⚙️ Spare Parts Catalogue-3
-</a>
-
-<br><br>
-    
-</section>
-
-<section class="catalogue">
-
-<h2>Search Machine</h2>
+<h2>Machine Catalogue</h2>
 
 <input
-type="search"
-id="pdfSearch"
-placeholder="🔍 Search PDF..."
-onkeyup="searchPDF()">
+type="text"
+id="searchBox"
+placeholder="Search Machine Name">
+
 <select id="brandFilter">
 
-<option value="all">All Brands</option>
+<option value="all">All Brand</option>
+
 <option value="JUKI">JUKI</option>
-<option value="BROTHER">BROTHER</option>
-<option value="JACK">JACK</option>
-<option value="PEGASUS">PEGASUS</option>
-<option value="SIRUBA">SIRUBA</option>
-<option value="YAMATO">YAMATO</option>
-<option value="PFAFF">PFAFF</option>
-<option value="DURKOPP ADLER">DURKOPP ADLER</option>
-<option value="REECE">REECE</option>
-<option value="VEIT">VEIT</option>
+
+<option value="Brother">Brother</option>
+
+<option value="Pegasus">Pegasus</option>
+
 </select>
 
-<br><br>
-
-<div id="product-list" class="products"></div>
-<div id="pdfList">
-
-<a href="pdf/Machine-Catalogue-1.pdf">📖 Machine Catalogue-1</a><br><br>
-
-<a href="pdf/Machine-Catalogue-2.pdf">📖 Machine Catalogue-2</a><br><br>
-
-<a href="pdf/Machine-Catalogue-3.pdf">📖 Machine Catalogue-3</a><br><br>
-
-<a href="pdf/Spare-Parts-Catalogue-1.pdf">⚙️ Spare Parts Catalogue-1</a><br><br>
-
-<a href="pdf/Spare-Parts-Catalogue-2.pdf">⚙️ Spare Parts Catalogue-2</a><br><br>
-
-<a href="pdf/Spare-Parts-Catalogue-3.pdf">⚙️ Spare Parts Catalogue-3</a><br><br>
-
-</div>
-</section>
-
-<section class="contact">
-
-<h2>Need More Information?</h2>
-
-<p>Contact SH Global Technology for machine price, quotation and technical support.</p>
-
-<br>
-
-<a class="btn"
-href="https://wa.me/8801621007916"
-target="_blank">
-
-💬 WhatsApp Inquiry
-
-</a>
+<div id="product-list"></div>
 
 </section>
 
@@ -258,21 +73,7 @@ target="_blank">
 
 <p><strong>SH Global Technology</strong></p>
 
-<p>
-Industrial Sewing Machine Sales | Spare Parts | Installation | Factory Maintenance
-</p>
-
-<p>
-📞 +8801621007916
-</p>
-
-<p>
-✉️ shglobaltechnology1981@gmail.com
-</p>
-
-<p>
-© 2026 SH Global Technology. All Rights Reserved.
-</p>
+<p>© 2026 All Rights Reserved.</p>
 
 </footer>
 
