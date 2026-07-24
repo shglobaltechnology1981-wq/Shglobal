@@ -760,4 +760,43 @@ margin-top:10px;
 background:#062b63;
 
 }
+
+/*==========================================
+PART-5
+PRODUCT COUNTER
+==========================================*/
+
+.product-info{
+
+text-align:center;
+margin:20px 0;
+font-size:22px;
+font-weight:bold;
+color:#0b3d91;
+
+}
+
+.loader{
+
+width:60px;
+height:60px;
+border:6px solid #ddd;
+border-top:6px solid #0b3d91;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:30px auto;
+
+}
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
 /*================ END OF STYLE.CSS ================*/
