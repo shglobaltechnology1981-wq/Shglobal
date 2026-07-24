@@ -609,6 +609,31 @@ btn.innerHTML = "🌙 Dark Mode";
 
 }
 
+/*==========================================
+PART-5D
+VISITOR COUNTER
+==========================================*/
+
+let visits = localStorage.getItem("shgt_visits");
+
+if(!visits){
+
+visits = 1;
+
+}else{
+
+visits = Number(visits) + 1;
+
+}
+
+localStorage.setItem("shgt_visits", visits);
+
+const visitor = document.getElementById("visitorCount");
+
+if(visitor){
+
+visitor.innerText = visits;
+
 }
 /*========== CONSOLE ==========*/
 
