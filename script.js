@@ -131,15 +131,12 @@ View Details
 
 </div>
 
+</div>
 
+`;
 
-});
+});)
 
-})
-
-.catch(error => console.log(error));
-
-}
 
 /*================ IMAGE HOVER EFFECT ================*/
 
