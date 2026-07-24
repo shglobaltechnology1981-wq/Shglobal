@@ -591,5 +591,19 @@ font-size:22px;
 }
 
 }
+.details-btn{
+background:#0b3d91;
+color:#fff;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+margin-top:8px;
+width:100%;
+}
+
+.details-btn:hover{
+background:#062b63;
+}
 
 /*================ END OF STYLE.CSS ================*/
