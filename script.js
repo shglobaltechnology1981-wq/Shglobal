@@ -132,7 +132,6 @@ View Details
 </div>
 
 
-`;
 
 });
 
