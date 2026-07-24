@@ -199,7 +199,6 @@
     "image": "images/brother-he800c.jpg",
     "whatsapp": "8801621007916"
   },
-  
   {
     "id": 21,
     "category": "Machinery",
@@ -400,7 +399,6 @@
     "image": "images/shgt-industrial.jpg",
     "whatsapp": "+8801621007916"
   },
-
   {
     "id": 41,
     "category": "Spare Parts",
@@ -499,6 +497,506 @@
     "model": "Servo Motor",
     "description": "Energy Saving Servo Motor",
     "image": "images/servo-motor.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 51,
+    "category": "Spare Parts",
+    "name": "JUKI Needle Bar",
+    "brand": "JUKI",
+    "model": "Needle Bar",
+    "description": "Original Needle Bar Assembly",
+    "image": "images/juki-needle-bar.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 52,
+    "category": "Spare Parts",
+    "name": "JUKI Thread Take Up Lever",
+    "brand": "JUKI",
+    "model": "Thread Take Up",
+    "description": "Genuine Thread Take Up Lever",
+    "image": "images/juki-thread-takeup.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 53,
+    "category": "Spare Parts",
+    "name": "Presser Bar Complete Set",
+    "brand": "All Brand",
+    "model": "Presser Bar",
+    "description": "Industrial Sewing Machine Presser Bar",
+    "image": "images/presser-bar.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 54,
+    "category": "Spare Parts",
+    "name": "Timing Belt",
+    "brand": "All Brand",
+    "model": "Timing Belt",
+    "description": "High Quality Sewing Machine Belt",
+    "image": "images/timing-belt.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 55,
+    "category": "Spare Parts",
+    "name": "Motor Pulley",
+    "brand": "All Brand",
+    "model": "Motor Pulley",
+    "description": "Industrial Motor Pulley",
+    "image": "images/motor-pulley.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 56,
+    "category": "Spare Parts",
+    "name": "JUKI Oil Pump",
+    "brand": "JUKI",
+    "model": "Oil Pump",
+    "description": "Sewing Machine Oil Pump Assembly",
+    "image": "images/juki-oil-pump.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 57,
+    "category": "Spare Parts",
+    "name": "Hook Saddle",
+    "brand": "All Brand",
+    "model": "Hook Saddle",
+    "description": "Rotary Hook Supporting Part",
+    "image": "images/hook-saddle.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 58,
+    "category": "Spare Parts",
+    "name": "Thread Guide Set",
+    "brand": "All Brand",
+    "model": "Thread Guide",
+    "description": "Complete Thread Guide Set",
+    "image": "images/thread-guide.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 59,
+    "category": "Spare Parts",
+    "name": "Industrial Sewing Machine Spring Set",
+    "brand": "All Brand",
+    "model": "Spring Set",
+    "description": "Original Machine Spring Set",
+    "image": "images/spring-set.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 60,
+    "category": "Accessories",
+    "name": "Sewing Machine LED Lamp",
+    "brand": "SHGT",
+    "model": "LED Lamp",
+    "description": "Industrial Machine LED Working Lamp",
+    "image": "images/sewing-led-lamp.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 61,
+    "category": "Accessories",
+    "name": "Machine Stand Complete Set",
+    "brand": "SHGT",
+    "model": "Stand Set",
+    "description": "Heavy Duty Sewing Machine Stand",
+    "image": "images/machine-stand.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 62,
+    "category": "Accessories",
+    "name": "Industrial Sewing Machine Table",
+    "brand": "SHGT",
+    "model": "Machine Table",
+    "description": "Complete Table With Drawer",
+    "image": "images/machine-table.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 63,
+    "category": "Accessories",
+    "name": "Servo Motor Controller",
+    "brand": "All Brand",
+    "model": "Motor Controller",
+    "description": "Electronic Servo Motor Controller",
+    "image": "images/servo-controller.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 64,
+    "category": "Accessories",
+    "name": "Sewing Machine Belt",
+    "brand": "All Brand",
+    "model": "Belt",
+    "description": "Industrial Machine Belt",
+    "image": "images/sewing-belt.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 65,
+    "category": "Accessories",
+    "name": "Needle Set",
+    "brand": "SCHMETZ",
+    "model": "Industrial Needle",
+    "description": "Original Industrial Sewing Needle",
+    "image": "images/industrial-needle.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 66,
+    "category": "Accessories",
+    "name": "Bobbin Set",
+    "brand": "All Brand",
+    "model": "Bobbin",
+    "description": "Industrial Bobbin Set",
+    "image": "images/bobbin-set.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 67,
+    "category": "Accessories",
+    "name": "Thread Stand",
+    "brand": "SHGT",
+    "model": "Thread Stand",
+    "description": "Multi Cone Thread Stand",
+    "image": "images/thread-stand.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 68,
+    "category": "Accessories",
+    "name": "Machine Cleaning Brush",
+    "brand": "SHGT",
+    "model": "Cleaning Brush",
+    "description": "Sewing Machine Maintenance Brush",
+    "image": "images/cleaning-brush.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 69,
+    "category": "Accessories",
+    "name": "Machine Oil Bottle",
+    "brand": "SHGT",
+    "model": "Oil Bottle",
+    "description": "Industrial Machine Oil Accessories",
+    "image": "images/oil-bottle.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 70,
+    "category": "Accessories",
+    "name": "Sewing Machine Tool Kit",
+    "brand": "SHGT",
+    "model": "Tool Kit",
+    "description": "Complete Maintenance Tool Kit",
+    "image": "images/tool-kit.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 71,
+    "category": "Special Machine",
+    "name": "JUKI AMS-221EN",
+    "brand": "JUKI",
+    "model": "AMS-221EN",
+    "description": "Computer Controlled Pattern Sewing Machine",
+    "image": "images/juki-ams221en.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 72,
+    "category": "Special Machine",
+    "name": "JUKI APW-895",
+    "brand": "JUKI",
+    "model": "APW-895",
+    "description": "Automatic Welt Pocket Machine",
+    "image": "images/juki-apw895.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 73,
+    "category": "Special Machine",
+    "name": "JUKI MF-7500",
+    "brand": "JUKI",
+    "model": "MF-7500",
+    "description": "Flat Bed Cover Stitch Machine",
+    "image": "images/juki-mf7500.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 74,
+    "category": "Special Machine",
+    "name": "JUKI MO-6804S",
+    "brand": "JUKI",
+    "model": "MO-6804S",
+    "description": "High Speed Overlock Machine",
+    "image": "images/juki-mo6804s.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 75,
+    "category": "Automatic Machine",
+    "name": "JUKI DDL-9000CFMS",
+    "brand": "JUKI",
+    "model": "DDL-9000CFMS",
+    "description": "Automatic Thread Trimmer Lock Stitch Machine",
+    "image": "images/juki-ddl9000cfms.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 76,
+    "category": "Automatic Machine",
+    "name": "JUKI LBH-1790AN",
+    "brand": "JUKI",
+    "model": "LBH-1790AN",
+    "description": "Computerized Buttonhole Machine",
+    "image": "images/juki-lbh1790an.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 77,
+    "category": "Automatic Machine",
+    "name": "JUKI LK-1903",
+    "brand": "JUKI",
+    "model": "LK-1903",
+    "description": "Computerized Bartack Machine",
+    "image": "images/juki-lk1903.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 78,
+    "category": "Automatic Machine",
+    "name": "BROTHER KE-430HS",
+    "brand": "BROTHER",
+    "model": "KE-430HS",
+    "description": "Electronic Buttonhole Machine",
+    "image": "images/brother-ke430hs.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 79,
+    "category": "Automatic Machine",
+    "name": "BROTHER BAS-326H",
+    "brand": "BROTHER",
+    "model": "BAS-326H",
+    "description": "Programmable Pattern Sewer",
+    "image": "images/brother-bas326h.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 80,
+    "category": "Automatic Machine",
+    "name": "PEGASUS M-900 Series",
+    "brand": "PEGASUS",
+    "model": "M900",
+    "description": "Automatic Overlock Solution",
+    "image": "images/pegasus-m900.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 81,
+    "category": "Special Machine",
+    "name": "Automatic Fabric Cutting Machine",
+    "brand": "SHGT",
+    "model": "CUT-900",
+    "description": "High Speed Fabric Cutting System",
+    "image": "images/automatic-cutter.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 82,
+    "category": "Special Machine",
+    "name": "Fusing Machine",
+    "brand": "SHGT",
+    "model": "FUS-1000",
+    "description": "Industrial Fabric Fusing Machine",
+    "image": "images/fusing-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 83,
+    "category": "Special Machine",
+    "name": "Button Attach Machine",
+    "brand": "JUKI",
+    "model": "MB-1800",
+    "description": "Automatic Button Sewing Machine",
+    "image": "images/button-attach.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 84,
+    "category": "Special Machine",
+    "name": "Snap Button Machine",
+    "brand": "SHGT",
+    "model": "SNAP-01",
+    "description": "Automatic Snap Button Fixing Machine",
+    "image": "images/snap-button.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 85,
+    "category": "Special Machine",
+    "name": "Eyelet Machine",
+    "brand": "SHGT",
+    "model": "EYELET-01",
+    "description": "Industrial Eyelet Attaching Machine",
+    "image": "images/eyelet-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 86,
+    "category": "Special Machine",
+    "name": "Elastic Attaching Machine",
+    "brand": "SHGT",
+    "model": "ELASTIC-01",
+    "description": "Garments Elastic Sewing Solution",
+    "image": "images/elastic-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 87,
+    "category": "Special Machine",
+    "name": "Collar Turning Machine",
+    "brand": "SHGT",
+    "model": "COLLAR-01",
+    "description": "Automatic Collar Processing Machine",
+    "image": "images/collar-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 88,
+    "category": "Special Machine",
+    "name": "Sleeve Setting Machine",
+    "brand": "SHGT",
+    "model": "SLEEVE-01",
+    "description": "Industrial Sleeve Sewing Solution",
+    "image": "images/sleeve-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 89,
+    "category": "Special Machine",
+    "name": "Pocket Setting Machine",
+    "brand": "SHGT",
+    "model": "POCKET-01",
+    "description": "Automatic Pocket Sewing Machine",
+    "image": "images/pocket-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 90,
+    "category": "Special Machine",
+    "name": "Garments Production Line Solution",
+    "brand": "SHGT",
+    "model": "LINE-SOLUTION",
+    "description": "Complete Sewing Line Installation & Service",
+    "image": "images/production-line.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 91,
+    "category": "Service",
+    "name": "Industrial Sewing Machine Installation",
+    "brand": "SHGT",
+    "model": "Installation Service",
+    "description": "Professional Machine Installation & Setup Service",
+    "image": "images/machine-installation.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 92,
+    "category": "Service",
+    "name": "Sewing Machine Maintenance Service",
+    "brand": "SHGT",
+    "model": "Maintenance",
+    "description": "Industrial Sewing Machine Repair & Maintenance",
+    "image": "images/machine-service.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 93,
+    "category": "Service",
+    "name": "Garments Sewing Line Setup",
+    "brand": "SHGT",
+    "model": "Line Setup",
+    "description": "Complete Sewing Line Planning & Installation",
+    "image": "images/line-setup.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 94,
+    "category": "Service",
+    "name": "Spare Parts Supply",
+    "brand": "SHGT",
+    "model": "Genuine Parts",
+    "description": "Original Sewing Machine Spare Parts Supply",
+    "image": "images/spare-parts-service.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 95,
+    "category": "Service",
+    "name": "Machine Overhauling Service",
+    "brand": "SHGT",
+    "model": "Overhaul",
+    "description": "Complete Industrial Machine Overhauling",
+    "image": "images/overhauling.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 96,
+    "category": "Service",
+    "name": "Automatic Machine Programming",
+    "brand": "SHGT",
+    "model": "Programming",
+    "description": "Computerized Sewing Machine Programming Support",
+    "image": "images/programming-service.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 97,
+    "category": "Machinery",
+    "name": "Industrial Sewing Machine Complete Package",
+    "brand": "SHGT",
+    "model": "Complete Package",
+    "description": "Machine + Stand + Motor + Accessories Package",
+    "image": "images/complete-package.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 98,
+    "category": "Machinery",
+    "name": "Garments Factory Automation Solution",
+    "brand": "SHGT",
+    "model": "Automation Solution",
+    "description": "Modern Garments Production Automation",
+    "image": "images/automation-solution.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 99,
+    "category": "Spare Parts",
+    "name": "Complete Sewing Machine Spare Parts Kit",
+    "brand": "SHGT",
+    "model": "Spare Kit",
+    "description": "Complete Genuine Spare Parts Package",
+    "image": "images/spare-kit.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 100,
+    "category": "Service",
+    "name": "SH Global Technology Support",
+    "brand": "SHGT",
+    "model": "Professional Support",
+    "description": "Industrial Sewing Machine Sales, Service & Spare Parts",
+    "image": "images/shgt-support.jpg",
     "whatsapp": "+8801621007916"
   }
 ]
