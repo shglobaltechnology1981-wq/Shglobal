@@ -61,46 +61,27 @@ WhatsApp
 
 function searchProduct(){
 
-const input = document
-
-.getElementById("searchBox")
-
-.value.toUpperCase();
+const input =
+document.getElementById("searchBox")
+.value
+.toUpperCase();
 
 const cards =
-
 document.querySelectorAll(".product-card");
 
 cards.forEach(card=>{
 
-const title =
+const text =
+card.innerText.toUpperCase();
 
-card.querySelector("h3").innerText.toUpperCase();
-
-const desc =
-
-card.querySelector("p").innerText.toUpperCase();
-
-if(
-
-title.indexOf(input)>-1 ||
-
-desc.indexOf(input)>-1
-
-){
-
-card.style.display="block";
-
-}else{
-
-card.style.display="none";
-
-}
+card.style.display =
+text.includes(input)
+? "block"
+: "none";
 
 });
 
 }
-
 /*================ AUTO GALLERY ================*/
 
 const galleryContainer = document.getElementById("gallery-container");
@@ -165,27 +146,33 @@ e.target.style.transform="scale(1)";
 
 /*================ BRAND FILTER ================*/
 
-function filterBrand(brand){
+function filterProducts(){
 
-const cards=document.querySelectorAll(".product-card");
+const brand =
+document.getElementById("brandFilter").value;
+
+const category =
+document.getElementById("categoryFilter").value;
+
+const cards =
+document.querySelectorAll(".product-card");
 
 cards.forEach(card=>{
 
-if(
+const text = card.innerText.toUpperCase();
 
-brand==="All" ||
+const brandOk =
+brand === "All" ||
+text.includes(brand.toUpperCase());
 
-card.innerHTML.toUpperCase().includes(brand.toUpperCase())
+const categoryOk =
+category === "All" ||
+text.includes(category.toUpperCase());
 
-){
-
-card.style.display="block";
-
-}else{
-
-card.style.display="none";
-
-}
+card.style.display =
+(brandOk && categoryOk)
+? "block"
+: "none";
 
 });
 
