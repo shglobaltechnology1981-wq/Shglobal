@@ -373,6 +373,67 @@ modal.style.display = "none";
 }
 
 });
+/*==========================================
+PART-4E
+MODAL EXTRA FEATURES
+==========================================*/
+
+/*========== BODY LOCK ==========*/
+
+const modal = document.getElementById("productModal");
+
+if(modal){
+
+const observer = new MutationObserver(function(){
+
+if(modal.style.display === "flex"){
+
+document.body.classList.add("modal-open");
+
+}else{
+
+document.body.classList.remove("modal-open");
+
+}
+
+});
+
+observer.observe(modal,{
+attributes:true,
+attributeFilter:["style"]
+});
+
+}
+
+/*========== IMAGE CLICK TO OPEN ==========*/
+
+document.addEventListener("click",function(e){
+
+if(e.target.matches(".product-card img")){
+
+e.target.click();
+
+}
+
+});
+
+/*========== ENTER KEY SUPPORT ==========*/
+
+document.addEventListener("keydown",function(e){
+
+if(e.key==="Enter"){
+
+const btn=document.querySelector(".details-btn");
+
+if(btn){
+
+btn.click();
+
+}
+
+}
+
+});
 
 /*========== CONSOLE ==========*/
 
