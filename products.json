@@ -54,7 +54,7 @@
     "call": "+8801621007917",
     "whatsapp": "+8801621007916"
   },
-    {
+  {
     "id": 6,
     "category": "Machinery",
     "name": "Kansai Special DFB-1404",
@@ -75,7 +75,8 @@
     "image": "images/feed-off-arm.jpg",
     "call": "+8801621007917",
     "whatsapp": "+8801621007916"
-  },
+  }
+  ,
   {
     "id": 8,
     "category": "Machinery",
@@ -131,7 +132,7 @@
     "call": "+8801621007917",
     "whatsapp": "+8801621007916"
   },
-    {
+  {
     "id": 13,
     "category": "Spare Parts",
     "name": "Rotary Hook",
@@ -150,185 +151,10 @@
     "model": "DBX1",
     "description": "Industrial Sewing Machine Needle",
     "image": "images/needle.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 15,
-    "category": "Spare Parts",
-    "name": "Looper",
-    "brand": "Pegasus",
-    "model": "Looper",
-    "description": "Overlock Machine Genuine Looper",
-    "image": "images/looper.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 16,
-    "category": "Spare Parts",
-    "name": "Bobbin Case",
-    "brand": "JUKI",
-    "model": "BC-01",
-    "description": "Industrial Bobbin Case",
-    "image": "images/bobbin-case.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 17,
-    "category": "Spare Parts",
-    "name": "Presser Foot",
-    "brand": "JUKI",
-    "model": "PF-01",
-    "description": "Industrial Presser Foot",
-    "image": "images/presser-foot.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 18,
-    "category": "Spare Parts",
-    "name": "Machine Knife",
-    "brand": "Pegasus",
-    "model": "Knife",
-    "description": "Upper & Lower Knife",
-    "image": "images/knife.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 19,
-    "category": "Spare Parts",
-    "name": "Servo Motor",
-    "brand": "Jack",
-    "model": "550W",
-    "description": "Energy Saving Servo Motor",
-    "image": "images/servo-motor.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 20,
-    "category": "Spare Parts",
-    "name": "Attachments Set",
-    "brand": "Universal",
-    "model": "Attachment",
-    "description": "Folders, Guides & Binders",
-    "image": "images/attachments.jpg",
     "call": "+8801621007917",
     "whatsapp": "+8801621007916"
   }
-  {
-    "id": 13,
-    "category": "Spare Parts",
-    "name": "Rotary Hook",
-    "brand": "Hirose",
-    "model": "Hook",
-    "description": "Genuine Rotary Hook",
-    "image": "images/rotary-hook.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 14,
-    "category": "Spare Parts",
-    "name": "Sewing Needle",
-    "brand": "Organ",
-    "model": "DBX1",
-    "description": "Industrial Sewing Machine Needle",
-    "image": "images/needle.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 15,
-    "category": "Spare Parts",
-    "name": "Looper",
-    "brand": "Pegasus",
-    "model": "Looper",
-    "description": "Overlock Machine Genuine Looper",
-    "image": "images/looper.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 16,
-    "category": "Spare Parts",
-    "name": "Bobbin Case",
-    "brand": "JUKI",
-    "model": "BC-01",
-    "description": "Industrial Bobbin Case",
-    "image": "images/bobbin-case.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 17,
-    "category": "Spare Parts",
-    "name": "Presser Foot",
-    "brand": "JUKI",
-    "model": "PF-01",
-    "description": "Industrial Presser Foot",
-    "image": "images/presser-foot.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 18,
-    "category": "Spare Parts",
-    "name": "Machine Knife",
-    "brand": "Pegasus",
-    "model": "Knife",
-    "description": "Upper & Lower Knife",
-    "image": "images/knife.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 19,
-    "category": "Spare Parts",
-    "name": "Servo Motor",
-    "brand": "Jack",
-    "model": "550W",
-    "description": "Energy Saving Servo Motor",
-    "image": "images/servo-motor.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 20,
-    "category": "Spare Parts",
-    "name": "Attachments Set",
-    "brand": "Universal",
-    "model": "Attachment",
-    "description": "Folders, Guides & Binders",
-    "image": "images/attachments.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  }
-    {
-    "id": 13,
-    "category": "Spare Parts",
-    "name": "Rotary Hook",
-    "brand": "Hirose",
-    "model": "Hook",
-    "description": "Genuine Rotary Hook",
-    "image": "images/rotary-hook.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
-  {
-    "id": 14,
-    "category": "Spare Parts",
-    "name": "Sewing Needle",
-    "brand": "Organ",
-    "model": "DBX1",
-    "description": "Industrial Sewing Machine Needle",
-    "image": "images/needle.jpg",
-    "call": "+8801621007917",
-    "whatsapp": "+8801621007916"
-  },
+  ,
   {
     "id": 15,
     "category": "Spare Parts",
