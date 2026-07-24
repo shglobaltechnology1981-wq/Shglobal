@@ -134,6 +134,13 @@ const galleryContainer = document.getElementById("gallery-container");
 if (galleryContainer) {
 
 fetch("products.json")
+  const count = document.getElementById("productCount");
+
+if(count){
+
+count.innerText = products.length;
+
+}
 .then(response => response.json())
 .then(products => {
 
