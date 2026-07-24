@@ -214,33 +214,28 @@ footer.innerHTML =
 const galleryContainer = document.getElementById("gallery-container");
 
 if (galleryContainer) {
+    fetch("products.json")
+        .then(response => response.json())
+        .then(products => {
 
-fetch("products.json")
+            galleryContainer.innerHTML = "";
 
-.then(response => response.json())
+            products.forEach(product => {
 
-.then(products => {
+                galleryContainer.innerHTML += `
+                    <div class="product-card">
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                    </div>
+                `;
 
-products.forEach(product => {
+            });
 
-galleryContainer.innerHTML += `
-
-<div class="product-card">
-
-<img src="${product.image}" alt="${product.name}">
-
-<h3>${product.name}</h3>
-
-<p>${product.description}</p>
-
-</div>
-
-`;
-
-});
-
-});
-
+        })
+        .catch(error => {
+            console.log(error);
+        });
 }
 /*==========================================
 CONSOLE MESSAGE
