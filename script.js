@@ -53,6 +53,8 @@ WhatsApp
 
 })
 
+});
+
 .catch(error => console.log(error));
 
 }
