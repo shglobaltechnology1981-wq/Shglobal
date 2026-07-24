@@ -1,18 +1,18 @@
 /*==========================================
+/*==========================================
 SH GLOBAL TECHNOLOGY
 Professional Website JavaScript
+PART-3A
 ==========================================*/
 
-/*================ AUTO LOAD PRODUCTS ================*/
+/*========== AUTO LOAD PRODUCTS ==========*/
 
 const productContainer = document.getElementById("product-container");
 
 if (productContainer) {
 
 fetch("products.json")
-
 .then(response => response.json())
-
 .then(products => {
 
 productContainer.innerHTML = "";
@@ -27,23 +27,25 @@ productContainer.innerHTML += `
 
 <h3>${product.name}</h3>
 
+<p><strong>Brand:</strong> ${product.brand}</p>
+
+<p><strong>Category:</strong> ${product.category}</p>
+
 <p>${product.description}</p>
 
-<a href="tel:${product.call}" class="call-btn">
+<div class="product-buttons">
 
+<a href="tel:${product.call || '+8801621007917'}" class="call-btn">
 📞 Call
-
 </a>
 
-<a href="https://wa.me/${product.whatsapp.replace("+","")}"
-
+<a href="https://wa.me/${(product.whatsapp || '+8801621007916').replace('+','')}"
 target="_blank"
-
 class="whatsapp-btn">
-
 WhatsApp
-
 </a>
+
+</div>
 
 </div>
 
@@ -51,13 +53,14 @@ WhatsApp
 
 });
 
-
 })
+.catch(error => {
 
-.catch(error => console.log(error));
+console.error("Products Load Error:", error);
+
+});
 
 }
-
 /*================ SEARCH PRODUCT ================*/
 
 function searchProduct(){
