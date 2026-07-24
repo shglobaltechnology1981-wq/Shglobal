@@ -51,9 +51,8 @@ WhatsApp
 
 });
 
-})
 
-});
+})
 
 .catch(error => console.log(error));
 
@@ -99,8 +98,6 @@ fetch("products.json")
 galleryContainer.innerHTML = "";
 
 products.forEach(product => {
-
-galleryContainer.innerHTML += `
 
 <div class="product-card">
 
