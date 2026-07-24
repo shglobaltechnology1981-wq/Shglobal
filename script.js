@@ -1,31 +1,91 @@
- /*==========================================
+/*==========================================
 SH GLOBAL TECHNOLOGY
-JavaScript File
+Professional Website JavaScript
 ==========================================*/
 
-/*============ SEARCH FUNCTION ============*/
+/*================ AUTO LOAD PRODUCTS ================*/
 
-function searchProduct() {
+const productContainer = document.getElementById("product-container");
 
-let input = document
+if (productContainer) {
+
+fetch("products.json")
+
+.then(response => response.json())
+
+.then(products => {
+
+productContainer.innerHTML = "";
+
+products.forEach(product => {
+
+productContainer.innerHTML += `
+
+<div class="product-card">
+
+<img src="${product.image}" alt="${product.name}">
+
+<h3>${product.name}</h3>
+
+<p>${product.description}</p>
+
+<a href="tel:${product.call}" class="call-btn">
+
+📞 Call
+
+</a>
+
+<a href="https://wa.me/${product.whatsapp.replace("+","")}"
+
+target="_blank"
+
+class="whatsapp-btn">
+
+WhatsApp
+
+</a>
+
+</div>
+
+`;
+
+});
+
+})
+
+.catch(error => console.log(error));
+
+}
+
+/*================ SEARCH PRODUCT ================*/
+
+function searchProduct(){
+
+const input = document
+
 .getElementById("searchBox")
+
 .value.toUpperCase();
 
-let cards =
+const cards =
+
 document.querySelectorAll(".product-card");
 
-cards.forEach(function(card){
+cards.forEach(card=>{
 
-let title =
-card.querySelector("h3");
+const title =
 
-let text =
-card.querySelector("p");
+card.querySelector("h3").innerText.toUpperCase();
+
+const desc =
+
+card.querySelector("p").innerText.toUpperCase();
 
 if(
-title.innerText.toUpperCase().indexOf(input)>-1 ||
 
-text.innerText.toUpperCase().indexOf(input)>-1
+title.indexOf(input)>-1 ||
+
+desc.indexOf(input)>-1
 
 ){
 
@@ -41,12 +101,103 @@ card.style.display="none";
 
 }
 
-/*============ SCROLL EFFECT ============*/
+/*================ AUTO GALLERY ================*/
+
+const galleryContainer = document.getElementById("gallery-container");
+
+if (galleryContainer) {
+
+fetch("products.json")
+
+.then(response => response.json())
+
+.then(products => {
+
+galleryContainer.innerHTML = "";
+
+products.forEach(product => {
+
+galleryContainer.innerHTML += `
+
+<div class="product-card">
+
+<img src="${product.image}" alt="${product.name}">
+
+<h3>${product.name}</h3>
+
+<p>${product.description}</p>
+
+</div>
+
+`;
+
+});
+
+})
+
+.catch(error => console.log(error));
+
+}
+
+/*================ IMAGE HOVER EFFECT ================*/
+
+document.addEventListener("mouseover",function(e){
+
+if(e.target.matches(".product-card img")){
+
+e.target.style.transform="scale(1.05)";
+
+e.target.style.transition=".3s";
+
+}
+
+});
+
+document.addEventListener("mouseout",function(e){
+
+if(e.target.matches(".product-card img")){
+
+e.target.style.transform="scale(1)";
+
+}
+
+});
+
+/*================ BRAND FILTER ================*/
+
+function filterBrand(brand){
+
+const cards=document.querySelectorAll(".product-card");
+
+cards.forEach(card=>{
+
+if(
+
+brand==="All" ||
+
+card.innerHTML.toUpperCase().includes(brand.toUpperCase())
+
+){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+/*================ HEADER SCROLL EFFECT ================*/
 
 window.addEventListener("scroll",function(){
 
-const header =
-document.querySelector(".header");
+const header=document.querySelector(".header");
+
+if(header){
 
 if(window.scrollY>50){
 
@@ -58,68 +209,25 @@ header.style.background="#0b3d91";
 
 }
 
-});
-/*============ PAGE LOAD ANIMATION ============*/
-
-window.addEventListener("load", function(){
-
-document.body.style.opacity = "1";
-
-});
-
-/*============ SMOOTH SCROLL ============*/
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-anchor.addEventListener("click", function(e){
-
-e.preventDefault();
-
-const target = document.querySelector(this.getAttribute("href"));
-
-if(target){
-
-target.scrollIntoView({
-
-behavior:"smooth"
-
-});
-
 }
 
 });
 
-});
+/*================ PAGE LOAD ANIMATION ================*/
 
-/*============ IMAGE HOVER EFFECT ============*/
+window.addEventListener("load",function(){
 
-const images = document.querySelectorAll(".product-card img");
-
-images.forEach(function(img){
-
-img.addEventListener("mouseover",function(){
-
-this.style.transform="scale(1.05)";
-
-this.style.transition=".3s";
+document.body.style.opacity="1";
 
 });
 
-img.addEventListener("mouseout",function(){
+/*================ FADE ANIMATION ================*/
 
-this.style.transform="scale(1)";
+const sections=document.querySelectorAll("section");
 
-});
+const observer=new IntersectionObserver(entries=>{
 
-});
-
-/*============ SIMPLE FADE EFFECT ============*/
-
-const sections = document.querySelectorAll("section");
-
-const observer = new IntersectionObserver(function(entries){
-
-entries.forEach(function(entry){
+entries.forEach(entry=>{
 
 if(entry.isIntersecting){
 
@@ -133,7 +241,7 @@ entry.target.style.transform="translateY(0)";
 
 });
 
-sections.forEach(function(section){
+sections.forEach(section=>{
 
 section.style.opacity="0";
 
@@ -144,105 +252,59 @@ section.style.transition="all .6s ease";
 observer.observe(section);
 
 });
-/*==========================================
-BACK TO TOP BUTTON
-==========================================*/
 
-const backToTop = document.createElement("button");
+/*================ BACK TO TOP ================*/
 
-backToTop.innerHTML = "↑";
+const backToTop=document.createElement("button");
 
-backToTop.id = "backToTop";
+backToTop.id="backToTop";
+
+backToTop.innerHTML="↑";
 
 document.body.appendChild(backToTop);
 
-backToTop.style.position = "fixed";
-backToTop.style.right = "20px";
-backToTop.style.bottom = "160px";
-backToTop.style.width = "50px";
-backToTop.style.height = "50px";
-backToTop.style.border = "none";
-backToTop.style.borderRadius = "50%";
-backToTop.style.background = "#0b3d91";
-backToTop.style.color = "#fff";
-backToTop.style.fontSize = "22px";
-backToTop.style.cursor = "pointer";
-backToTop.style.display = "none";
-backToTop.style.zIndex = "999";
+window.addEventListener("scroll",()=>{
 
-window.addEventListener("scroll", function () {
+if(window.scrollY>300){
 
-if (window.scrollY > 300) {
+backToTop.style.display="block";
 
-backToTop.style.display = "block";
+}else{
 
-} else {
-
-backToTop.style.display = "none";
+backToTop.style.display="none";
 
 }
 
 });
 
-backToTop.addEventListener("click", function () {
+backToTop.addEventListener("click",()=>{
 
 window.scrollTo({
 
-top: 0,
+top:0,
 
-behavior: "smooth"
-
-});
+behavior:"smooth"
 
 });
 
-/*==========================================
-CURRENT YEAR FOOTER
-==========================================*/
+});
 
-const footer = document.querySelector("footer p");
+/*================ CURRENT YEAR FOOTER ================*/
 
-if (footer) {
+const footer=document.querySelector("footer p");
 
-footer.innerHTML =
-"© " + new Date().getFullYear() +
-" SH Global Technology<br>All Rights Reserved.";
+if(footer){
+
+footer.innerHTML=
+
+"© "+new Date().getFullYear()+
+
+" SH Global Technology<br>Industrial Sewing Machines & Genuine Spare Parts<br>All Rights Reserved.";
 
 }
-// =================== AUTO GALLERY ===================
 
-const galleryContainer = document.getElementById("gallery-container");
+/*================ CONSOLE ================*/
 
-if (galleryContainer) {
-    fetch("products.json")
-        .then(response => response.json())
-        .then(products => {
+console.log("SH Global Technology Loaded Successfully");
 
-            galleryContainer.innerHTML = "";
-
-            products.forEach(product => {
-
-                galleryContainer.innerHTML += `
-                    <div class="product-card">
-                        <img src="${product.image}" alt="${product.name}">
-                        <h3>${product.name}</h3>
-                        <p>${product.description}</p>
-                    </div>
-                `;
-
-            });
-
-        })
-        .catch(error => {
-            console.log(error);
-        });
-}
-/*==========================================
-CONSOLE MESSAGE
-==========================================*/
-
-console.log("SH Global Technology Website Loaded Successfully");
-
-/*==========================================
-END OF SCRIPT.JS
-==========================================*/
+/*================ END OF SCRIPT ================*/
