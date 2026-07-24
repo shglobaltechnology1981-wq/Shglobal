@@ -864,4 +864,44 @@ z-index:99999;
 transition:width .2s;
 
 }
+  /*==========================================
+PART-5C
+DARK MODE
+==========================================*/
+
+#themeBtn{
+
+position:fixed;
+top:15px;
+right:15px;
+padding:10px 15px;
+background:#0b3d91;
+color:#fff;
+border:none;
+border-radius:6px;
+cursor:pointer;
+z-index:9999;
+
+}
+
+.dark-mode{
+
+background:#121212;
+color:#ffffff;
+
+}
+
+.dark-mode .header,
+.dark-mode footer{
+
+background:#000;
+
+}
+
+.dark-mode .product-card{
+
+background:#1f1f1f;
+color:#fff;
+
+}
 /*================ END OF STYLE.CSS ================*/
