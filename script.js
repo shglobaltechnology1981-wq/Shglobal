@@ -139,7 +139,52 @@ View Details
 
 });)
 
+products.forEach(product => {
 
+galleryContainer.innerHTML += `
+
+<div class="product-card">
+
+<img src="${product.image}" alt="${product.name}">
+
+<h3>${product.name}</h3>
+
+<p><strong>Brand:</strong> ${product.brand}</p>
+
+<p><strong>Category:</strong> ${product.category}</p>
+
+<p>${product.description}</p>
+
+<div class="product-buttons">
+
+<a href="tel:${product.call || '+8801621007917'}" class="call-btn">
+📞 Call
+</a>
+
+<a href="https://wa.me/${(product.whatsapp || '+8801621007916').replace('+','')}"
+target="_blank"
+class="whatsapp-btn">
+WhatsApp
+</a>
+
+<button class="details-btn"
+onclick="showDetails('${product.name}','${product.brand}','${product.category}','${product.description}','${product.image}')">
+View Details
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+})
+
+.catch(error => console.log(error));
+
+}
 /*================ IMAGE HOVER EFFECT ================*/
 
 document.addEventListener("mouseover",function(e){
