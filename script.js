@@ -311,6 +311,16 @@ footer.innerHTML=
 
 }
 
+function showDetails(name, brand, category, description, image){
+
+alert(
+"Product : " + name +
+"\nBrand : " + brand +
+"\nCategory : " + category +
+"\n\n" + description
+);
+
+}
 /*================ CONSOLE ================*/
 
 console.log("SH Global Technology Loaded Successfully");
