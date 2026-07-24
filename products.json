@@ -299,6 +299,7 @@
     "image": "images/brother-bas311h.jpg",
     "whatsapp": "+8801621007916"
   },
+
   {
     "id": 31,
     "category": "Machinery",
@@ -460,7 +461,7 @@
     "whatsapp": "+8801621007916"
   },
   {
-  "id": 47,
+    "id": 47,
     "category": "Spare Parts",
     "name": "Upper Knife",
     "brand": "PEGASUS",
@@ -476,7 +477,7 @@
     "brand": "PEGASUS",
     "model": "Lower Knife",
     "description": "Overlock Machine Lower Knife",
-  "image": "images/upper-knife.jpg"
+    "image": "images/lower-knife.jpg",
     "whatsapp": "+8801621007916"
   },
   {
