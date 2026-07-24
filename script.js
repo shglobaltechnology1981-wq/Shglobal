@@ -559,6 +559,34 @@ loader.style.display = "none";
 
 }
 
+
+/*==========================================
+PART-5B
+SCROLL PROGRESS BAR
+==========================================*/
+
+window.addEventListener("scroll", function(){
+
+const winScroll =
+document.documentElement.scrollTop;
+
+const height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+const scrolled =
+(winScroll / height) * 100;
+
+const progress =
+document.getElementById("progressBar");
+
+if(progress){
+
+progress.style.width =
+scrolled + "%";
+
+}
+
 });
 /*========== CONSOLE ==========*/
 
