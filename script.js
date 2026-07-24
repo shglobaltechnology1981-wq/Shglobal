@@ -635,6 +635,31 @@ if(visitor){
 visitor.innerText = visits;
 
 }
+  /*==========================================
+PART-6
+NEWSLETTER
+==========================================*/
+
+function subscribeNews(){
+
+const email =
+document.getElementById("subscriberEmail").value.trim();
+
+if(email===""){
+
+alert("Please enter your email.");
+
+return;
+
+}
+
+localStorage.setItem("subscriberEmail",email);
+
+alert("Thank you for subscribing!");
+
+document.getElementById("subscriberEmail").value="";
+
+}
 /*========== CONSOLE ==========*/
 
 console.log("SH Global Technology Loaded Successfully");
