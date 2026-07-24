@@ -904,4 +904,31 @@ background:#1f1f1f;
 color:#fff;
 
 }
+  /*==========================================
+PART-5D
+VISITOR COUNTER
+==========================================*/
+
+.visitor-section{
+
+text-align:center;
+padding:20px;
+background:#f5f5f5;
+
+}
+
+.visitor-section h3{
+
+color:#0b3d91;
+margin-bottom:10px;
+
+}
+
+#visitorCount{
+
+font-size:30px;
+font-weight:bold;
+color:#ff5722;
+
+}
 /*================ END OF STYLE.CSS ================*/
