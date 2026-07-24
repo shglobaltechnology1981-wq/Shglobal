@@ -544,6 +544,22 @@ behavior:"smooth"
 
 }
 
+/*==========================================
+PART-5A
+HIDE LOADER
+==========================================*/
+
+window.addEventListener("load", function(){
+
+const loader = document.getElementById("loader");
+
+if(loader){
+
+loader.style.display = "none";
+
+}
+
+});
 /*========== CONSOLE ==========*/
 
 console.log("SH Global Technology Loaded Successfully");
