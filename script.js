@@ -660,6 +660,49 @@ alert("Thank you for subscribing!");
 document.getElementById("subscriberEmail").value="";
 
 }
+  /*==========================================
+PART-6A
+CUSTOMER INQUIRY
+==========================================*/
+
+function sendInquiry(){
+
+const name =
+document.getElementById("customerName").value.trim();
+
+const phone =
+document.getElementById("customerPhone").value.trim();
+
+const message =
+document.getElementById("customerMessage").value.trim();
+
+if(name==="" || phone==="" || message===""){
+
+alert("Please fill all fields.");
+
+return;
+
+}
+
+const text =
+
+"Customer Inquiry%0A%0A" +
+
+"Name: " + name + "%0A" +
+
+"Phone: " + phone + "%0A" +
+
+"Message: " + message;
+
+window.open(
+
+"https://wa.me/8801621007916?text=" + text,
+
+"_blank"
+
+);
+
+}
 /*========== CONSOLE ==========*/
 
 console.log("SH Global Technology Loaded Successfully");
