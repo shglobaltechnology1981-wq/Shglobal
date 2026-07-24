@@ -931,4 +931,60 @@ font-weight:bold;
 color:#ff5722;
 
 }
+  /*==========================================
+PART-5E
+SOCIAL FLOATING BUTTONS
+==========================================*/
+
+.social-floating{
+
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:9999;
+
+}
+
+.social-floating a{
+
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+color:#fff;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+
+}
+
+.social-floating a:hover{
+
+transform:scale(1.1);
+
+}
+
+.social-whatsapp{
+
+background:#25D366;
+
+}
+
+.social-call{
+
+background:#0b3d91;
+
+}
+
+.social-facebook{
+
+background:#1877F2;
+
+}
 /*================ END OF STYLE.CSS ================*/
