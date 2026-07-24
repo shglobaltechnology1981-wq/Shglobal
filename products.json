@@ -198,8 +198,8 @@
     "description": "Electronic Button Hole Machine",
     "image": "images/brother-he800c.jpg",
     "whatsapp": "8801621007916"
-  }
-  [
+  },
+  
   {
     "id": 21,
     "category": "Machinery",
@@ -299,4 +299,206 @@
     "description": "Programmable Bartack Machine",
     "image": "images/brother-bas311h.jpg",
     "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 31,
+    "category": "Machinery",
+    "name": "JACK A4B",
+    "brand": "JACK",
+    "model": "A4B",
+    "description": "Computerized Direct Drive Lock Stitch Machine",
+    "image": "images/jack-a4b.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 32,
+    "category": "Machinery",
+    "name": "JACK C5",
+    "brand": "JACK",
+    "model": "C5",
+    "description": "High Speed Overlock Machine",
+    "image": "images/jack-c5.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 33,
+    "category": "Machinery",
+    "name": "SIRUBA 747K",
+    "brand": "SIRUBA",
+    "model": "747K",
+    "description": "4 Thread Overlock Machine",
+    "image": "images/siruba-747k.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 34,
+    "category": "Machinery",
+    "name": "SIRUBA 757K",
+    "brand": "SIRUBA",
+    "model": "757K",
+    "description": "5 Thread Overlock Machine",
+    "image": "images/siruba-757k.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 35,
+    "category": "Machinery",
+    "name": "KANSAI SPECIAL RX9803",
+    "brand": "KANSAI",
+    "model": "RX9803",
+    "description": "Flat Seam Cover Stitch Machine",
+    "image": "images/kansai-rx9803.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 36,
+    "category": "Machinery",
+    "name": "KANSAI SPECIAL WX8803",
+    "brand": "KANSAI",
+    "model": "WX8803",
+    "description": "Cover Stitch Machine",
+    "image": "images/kansai-wx8803.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 37,
+    "category": "Machinery",
+    "name": "YAMATO AZ8000",
+    "brand": "YAMATO",
+    "model": "AZ8000",
+    "description": "Industrial Overlock Machine",
+    "image": "images/yamato-az8000.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 38,
+    "category": "Machinery",
+    "name": "YAMATO FD62",
+    "brand": "YAMATO",
+    "model": "FD62",
+    "description": "High Speed Sewing Machine",
+    "image": "images/yamato-fd62.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 39,
+    "category": "Machinery",
+    "name": "SHGT Automatic Cutting Machine",
+    "brand": "SHGT",
+    "model": "SHGT-CUT-01",
+    "description": "Automatic Fabric Cutting Solution",
+    "image": "images/shgt-cutting-machine.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 40,
+    "category": "Machinery",
+    "name": "SHGT Industrial Sewing Machine",
+    "brand": "SHGT",
+    "model": "SHGT-9000",
+    "description": "Heavy Duty Industrial Sewing Machine",
+    "image": "images/shgt-industrial.jpg",
+    "whatsapp": "+8801621007916"
+  },
+
+  {
+    "id": 41,
+    "category": "Spare Parts",
+    "name": "JUKI Rotary Hook",
+    "brand": "JUKI",
+    "model": "Rotary Hook",
+    "description": "Original Sewing Machine Rotary Hook",
+    "image": "images/juki-rotary-hook.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 42,
+    "category": "Spare Parts",
+    "name": "JUKI Bobbin Case",
+    "brand": "JUKI",
+    "model": "Bobbin Case",
+    "description": "Genuine Bobbin Case For Industrial Machine",
+    "image": "images/juki-bobbin-case.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 43,
+    "category": "Spare Parts",
+    "name": "Needle Plate",
+    "brand": "All Brand",
+    "model": "Needle Plate",
+    "description": "Industrial Sewing Machine Needle Plate",
+    "image": "images/needle-plate.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 44,
+    "category": "Spare Parts",
+    "name": "Feed Dog",
+    "brand": "All Brand",
+    "model": "Feed Dog",
+    "description": "Original Quality Feed Dog",
+    "image": "images/feed-dog.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 45,
+    "category": "Spare Parts",
+    "name": "Presser Foot Set",
+    "brand": "All Brand",
+    "model": "Presser Foot",
+    "description": "Industrial Machine Presser Foot Set",
+    "image": "images/presser-foot.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 46,
+    "category": "Spare Parts",
+    "name": "JUKI Tension Assembly",
+    "brand": "JUKI",
+    "model": "Tension Unit",
+    "description": "Thread Tension Complete Assembly",
+    "image": "images/juki-tension.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 47,
+    "category": "Spare Parts",
+    "name": "Upper Knife",
+    "brand": "PEGASUS",
+    "model": "Upper Knife",
+    "description": "Overlock Machine Upper Knife",
+    image": "images/upper-knife.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 48,
+    "category": "Spare Parts",
+    "name": "Lower Knife",
+    "brand": "PEGASUS",
+    "model": "Lower Knife",
+    "description": "Overlock Machine Lower Knife",
+  "image": "images/upper-knife.jpg"
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 49,
+    "category": "Spare Parts",
+    "name": "Buttonhole Knife",
+    "brand": "JUKI",
+    "model": "Buttonhole Knife",
+    "description": "Buttonhole Machine Cutting Knife",
+    "image": "images/buttonhole-knife.jpg",
+    "whatsapp": "+8801621007916"
+  },
+  {
+    "id": 50,
+    "category": "Spare Parts",
+    "name": "Industrial Sewing Motor",
+    "brand": "All Brand",
+    "model": "Servo Motor",
+    "description": "Energy Saving Servo Motor",
+    "image": "images/servo-motor.jpg",
+    "whatsapp": "+8801621007916"
   }
+]
