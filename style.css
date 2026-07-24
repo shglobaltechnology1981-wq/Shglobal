@@ -472,7 +472,6 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 }
 
-}
 
 /*================ RESPONSIVE MOBILE ================*/
 
@@ -550,7 +549,6 @@ padding:20px;
 font-size:16px;
 }
 
-}
 
 /*================ SMALL MOBILE ================*/
 
@@ -590,7 +588,6 @@ height:50px;
 font-size:22px;
 }
 
-}
 .details-btn{
 background:#0b3d91;
 color:#fff;
@@ -650,7 +647,6 @@ transform:scale(1);
 opacity:1;
 }
 
-}
 
 .modal-content img{
 
@@ -850,6 +846,22 @@ color:#666666;
 transform:rotate(360deg);
 
 }
+
+/*==========================================
+PART-5B
+SCROLL PROGRESS BAR
+==========================================*/
+
+#progressBar{
+
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:5px;
+background:#0b3d91;
+z-index:99999;
+transition:width .2s;
 
 }
 /*================ END OF STYLE.CSS ================*/
