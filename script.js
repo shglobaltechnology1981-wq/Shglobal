@@ -587,7 +587,29 @@ scrolled + "%";
 
 }
 
-});
+/*==========================================
+PART-5C
+DARK MODE
+==========================================*/
+
+function toggleTheme(){
+
+document.body.classList.toggle("dark-mode");
+
+const btn =
+document.getElementById("themeBtn");
+
+if(document.body.classList.contains("dark-mode")){
+
+btn.innerHTML = "☀️ Light Mode";
+
+}else{
+
+btn.innerHTML = "🌙 Dark Mode";
+
+}
+
+}
 /*========== CONSOLE ==========*/
 
 console.log("SH Global Technology Loaded Successfully");
