@@ -325,7 +325,54 @@ Industrial Sewing Machines & Genuine Spare Parts<br>
 All Rights Reserved.`;
 
 }
+/*==========================================
+PART-4B
+PRODUCT DETAILS MODAL
+==========================================*/
 
+function showDetails(name, brand, category, description, image, call, whatsapp){
+
+document.getElementById("modalName").innerText = name;
+
+document.getElementById("modalBrand").innerText = brand;
+
+document.getElementById("modalCategory").innerText = category;
+
+document.getElementById("modalDescription").innerText = description;
+
+document.getElementById("modalImage").src = image;
+
+document.getElementById("modalCall").href =
+"tel:" + (call || "+8801621007917");
+
+document.getElementById("modalWhatsapp").href =
+"https://wa.me/" + (whatsapp || "+8801621007916").replace("+","");
+
+document.getElementById("productModal").style.display = "flex";
+
+}
+
+/*========== CLOSE MODAL ==========*/
+
+function closeModal(){
+
+document.getElementById("productModal").style.display = "none";
+
+}
+
+/*========== CLICK OUTSIDE TO CLOSE ==========*/
+
+window.addEventListener("click", function(event){
+
+const modal = document.getElementById("productModal");
+
+if(event.target === modal){
+
+modal.style.display = "none";
+
+}
+
+});
 
 /*========== CONSOLE ==========*/
 
