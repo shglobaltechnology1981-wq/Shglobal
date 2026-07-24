@@ -434,6 +434,42 @@ btn.click();
 }
 
 });
+/*==========================================
+PART-4F
+SHARE & COPY PRODUCT
+==========================================*/
+
+/*========== SHARE PRODUCT ==========*/
+
+function shareProduct(name){
+
+if(navigator.share){
+
+navigator.share({
+
+title:name,
+text:"Check this product from SH Global Technology",
+url:window.location.href
+
+});
+
+}else{
+
+alert("Share is not supported on this device.");
+
+}
+
+}
+
+/*========== COPY PRODUCT NAME ==========*/
+
+function copyProduct(name){
+
+navigator.clipboard.writeText(name);
+
+alert("Copied : " + name);
+
+}
 
 /*========== CONSOLE ==========*/
 
