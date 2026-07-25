@@ -46,7 +46,7 @@ onclick="showDetails(
 View Details
 </button>
 
-<a href="https://wa.me/${(product.whatsapp || "8801621007916").replace("+","")}"
+<a href="https://wa.me/${(product.whatsapp || '8801621007916').replace('+','')}"
 target="_blank"
 class="whatsapp-btn">
 WhatsApp
@@ -68,14 +68,15 @@ console.error("Products Load Error:", error);
 });
 
 }
+
 /*==========================================
 PART-2
-SEARCH + FILTER + GALLERY
+SEARCH + GALLERY + VIEW DETAILS
 ==========================================*/
 
-/*========== SEARCH + FILTER ==========*/
+/*========== SEARCH FILTER ==========*/
 
-function filterProducts(){
+function filterProducts() {
 
 const search =
 document.getElementById("searchBox")
@@ -92,20 +93,19 @@ document.getElementById("categoryFilter")
 ? document.getElementById("categoryFilter").value.toUpperCase()
 : "ALL";
 
-const cards =
-document.querySelectorAll(".product-card");
+const cards = document.querySelectorAll(".product-card");
 
-cards.forEach(card=>{
+cards.forEach(card => {
 
 const text = card.innerText.toUpperCase();
 
 const searchMatch = text.includes(search);
 
 const brandMatch =
-brand==="ALL" || text.includes(brand);
+brand === "ALL" || text.includes(brand);
 
 const categoryMatch =
-category==="ALL" || text.includes(category);
+category === "ALL" || text.includes(category);
 
 card.style.display =
 (searchMatch && brandMatch && categoryMatch)
@@ -116,71 +116,13 @@ card.style.display =
 
 }
 
+/*========== LIVE SEARCH ==========*/
+
 function searchProduct(){
+
 filterProducts();
-}
-
-/*========== GALLERY ==========*/
-
-const galleryContainer =
-document.getElementById("gallery-container");
-
-if(galleryContainer){
-
-const count =
-document.getElementById("productCount");
-
-fetch("products.json")
-.then(res=>res.json())
-.then(products=>{
-
-if(count){
-count.innerText = products.length;
-}
-
-galleryContainer.innerHTML="";
-
-products.forEach(product=>{
-
-galleryContainer.innerHTML += `
-
-<div class="product-card">
-
-<img src="${product.image}" alt="${product.name}">
-
-<h3>${product.name}</h3>
-
-<p><strong>Brand:</strong> ${product.brand}</p>
-
-<p><strong>Category:</strong> ${product.category}</p>
-
-<p>${product.description}</p>
-
-<button class="details-btn"
-onclick="showDetails(
-'${product.name}',
-'${product.brand}',
-'${product.category}',
-'${product.description}',
-'${product.image}',
-'${product.whatsapp}'
-)">
-View Details
-</button>
-
-</div>
-
-`;
-
-});
-
-});
 
 }
-/*==========================================
-PART-3
-VIEW DETAILS + MODAL + IMAGE HOVER
-==========================================*/
 
 /*========== VIEW DETAILS ==========*/
 
@@ -193,7 +135,8 @@ document.getElementById("modalDescription").innerText = description;
 document.getElementById("modalImage").src = image;
 
 document.getElementById("modalWhatsapp").href =
-"https://wa.me/" + (whatsapp || "8801621007916").replace("+","");
+"https://wa.me/" +
+(whatsapp || "8801621007916").replace("+","");
 
 document.getElementById("productModal").style.display = "flex";
 
@@ -207,19 +150,22 @@ document.getElementById("productModal").style.display = "none";
 
 }
 
-/*========== CLICK OUTSIDE TO CLOSE ==========*/
-
 window.addEventListener("click", function(event){
 
 const modal = document.getElementById("productModal");
 
-if(modal && event.target === modal){
+if(event.target === modal){
 
 modal.style.display = "none";
 
 }
 
 });
+
+/*==========================================
+PART-3
+IMAGE EFFECTS + HEADER + FOOTER
+==========================================*/
 
 /*========== IMAGE HOVER ==========*/
 
@@ -243,10 +189,6 @@ e.target.style.transform = "scale(1)";
 }
 
 });
-/*==========================================
-PART-4
-FINAL EFFECTS
-==========================================*/
 
 /*========== HEADER SCROLL ==========*/
 
@@ -254,10 +196,15 @@ window.addEventListener("scroll", function(){
 
 const header = document.querySelector(".header");
 
-if(header){
+if(!header) return;
 
-header.style.background =
-window.scrollY > 50 ? "#062b63" : "#0b3d91";
+if(window.scrollY > 50){
+
+header.style.background = "#062b63";
+
+}else{
+
+header.style.background = "#0b3d91";
 
 }
 
@@ -269,28 +216,7 @@ window.addEventListener("load", function(){
 
 document.body.style.opacity = "1";
 
-const loader = document.getElementById("loader");
-
-if(loader){
-
-loader.style.display = "none";
-
-}
-
 });
-
-/*========== FOOTER YEAR ==========*/
-
-const footer = document.querySelector("footer p");
-
-if(footer){
-
-footer.innerHTML =
-`© ${new Date().getFullYear()} SH Global Technology<br>
-Industrial Sewing Machines & Genuine Spare Parts<br>
-All Rights Reserved.`;
-
-}
 
 /*========== BACK TO TOP ==========*/
 
@@ -305,38 +231,136 @@ backToTop.style.display = "none";
 
 window.addEventListener("scroll", function(){
 
-backToTop.style.display =
-window.scrollY > 300 ? "block" : "none";
+if(window.scrollY > 300){
+
+backToTop.style.display = "block";
+
+}else{
+
+backToTop.style.display = "none";
+
+}
 
 });
 
-backToTop.onclick = function(){
+backToTop.addEventListener("click", function(){
 
 window.scrollTo({
+
 top:0,
 behavior:"smooth"
+
 });
 
+});
+
+/*========== FOOTER YEAR ==========*/
+
+const footer = document.querySelector("footer p");
+
+if(footer){
+
+footer.innerHTML =
+
+`© ${new Date().getFullYear()} SH Global Technology<br>
+Industrial Sewing Machines & Genuine Spare Parts<br>
+All Rights Reserved.`;
+
+}
+
+/*==========================================
+PART-4
+VIEW DETAILS MODAL
+==========================================*/
+
+function showDetails(name, brand, category, description, image, whatsapp){
+
+    document.getElementById("modalName").innerText = name;
+    document.getElementById("modalBrand").innerText = brand;
+    document.getElementById("modalCategory").innerText = category;
+    document.getElementById("modalDescription").innerText = description;
+    document.getElementById("modalImage").src = image;
+
+    document.getElementById("modalWhatsapp").href =
+    "https://wa.me/" + (whatsapp || "8801621007916").replace("+","");
+
+    document.getElementById("productModal").style.display = "flex";
+}
+
+/*========== CLOSE MODAL ==========*/
+
+function closeModal(){
+    document.getElementById("productModal").style.display = "none";
+}
+
+/*========== CLICK OUTSIDE ==========*/
+
+window.onclick = function(event){
+
+    const modal = document.getElementById("productModal");
+
+    if(event.target === modal){
+        modal.style.display = "none";
+    }
 };
 
-/*========== PROGRESS BAR ==========*/
+/*========== IMAGE HOVER ==========*/
+
+document.addEventListener("mouseover", function(e){
+
+    if(e.target.matches(".product-card img")){
+        e.target.style.transform = "scale(1.05)";
+        e.target.style.transition = "0.3s";
+    }
+
+});
+
+document.addEventListener("mouseout", function(e){
+
+    if(e.target.matches(".product-card img")){
+        e.target.style.transform = "scale(1)";
+    }
+
+});
+
+console.log("SH Global Technology Loaded Successfully");
+
+/*==========================================
+PART-5
+LOADER + PROGRESS BAR + DARK MODE
+==========================================*/
+
+/*========== HIDE LOADER ==========*/
+
+window.addEventListener("load", function(){
+
+const loader = document.getElementById("loader");
+
+if(loader){
+
+loader.style.display = "none";
+
+}
+
+});
+
+/*========== SCROLL PROGRESS BAR ==========*/
 
 window.addEventListener("scroll", function(){
 
-const progress =
-document.getElementById("progressBar");
+const progress = document.getElementById("progressBar");
 
 if(progress){
 
-const winScroll =
-document.documentElement.scrollTop;
+const winScroll = document.documentElement.scrollTop;
 
 const height =
 document.documentElement.scrollHeight -
 document.documentElement.clientHeight;
 
-progress.style.width =
-(winScroll / height * 100) + "%";
+const percent = (winScroll / height) * 100;
+
+progress.style.width = percent + "%";
 
 }
 
@@ -348,8 +372,7 @@ function toggleTheme(){
 
 document.body.classList.toggle("dark-mode");
 
-const btn =
-document.getElementById("themeBtn");
+const btn = document.getElementById("themeBtn");
 
 if(btn){
 
@@ -364,21 +387,24 @@ document.body.classList.contains("dark-mode")
 
 /*========== VISITOR COUNTER ==========*/
 
-let visits =
-localStorage.getItem("shgt_visits") || 0;
+let visits = localStorage.getItem("shgt_visits") || 0;
 
 visits++;
 
 localStorage.setItem("shgt_visits", visits);
 
-const visitor =
-document.getElementById("visitorCount");
+const visitor = document.getElementById("visitorCount");
 
 if(visitor){
 
 visitor.innerText = visits;
 
 }
+
+/*==========================================
+PART-6
+NEWSLETTER + CUSTOMER INQUIRY + EXTRA
+==========================================*/
 
 /*========== NEWSLETTER ==========*/
 
@@ -387,10 +413,9 @@ function subscribeNews(){
 const email =
 document.getElementById("subscriberEmail").value.trim();
 
-if(email===""){
+if(email === ""){
 
 alert("Please enter your email.");
-
 return;
 
 }
@@ -399,7 +424,7 @@ localStorage.setItem("subscriberEmail", email);
 
 alert("Thank you for subscribing!");
 
-document.getElementById("subscriberEmail").value="";
+document.getElementById("subscriberEmail").value = "";
 
 }
 
@@ -416,10 +441,9 @@ document.getElementById("customerPhone").value.trim();
 const message =
 document.getElementById("customerMessage").value.trim();
 
-if(name==="" || phone==="" || message===""){
+if(name === "" || phone === "" || message === ""){
 
 alert("Please fill all fields.");
-
 return;
 
 }
@@ -439,4 +463,63 @@ encodeURIComponent(text),
 
 }
 
-console.log("SH Global Technology Loaded Successfully");
+/*========== SHARE PRODUCT ==========*/
+
+function shareProduct(name){
+
+if(navigator.share){
+
+navigator.share({
+title: name,
+text: "Check this product from SH Global Technology",
+url: window.location.href
+});
+
+}else{
+
+alert("Share is not supported on this device.");
+
+}
+
+}
+
+/*========== COPY PRODUCT NAME ==========*/
+
+function copyProduct(name){
+
+navigator.clipboard.writeText(name);
+
+alert("Copied: " + name);
+
+}
+
+/*========== PRINT PAGE ==========*/
+
+function printProduct(){
+
+window.print();
+
+}
+
+/*========== OPEN IMAGE ==========*/
+
+function openImage(image){
+
+window.open(image, "_blank");
+
+}
+
+/*========== GO TOP ==========*/
+
+function goTop(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+/*========== END ==========*/
+
+console.log("✅ SH Global Technology Website Loaded Successfully");
