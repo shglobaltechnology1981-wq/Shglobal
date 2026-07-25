@@ -329,8 +329,7 @@ All Rights Reserved.`;
 PART-4B
 PRODUCT DETAILS MODAL
 ==========================================*/
-
-function showDetails(name, brand, category, description, image, call, whatsapp){
+function showDetails(name, brand, category, description, image, whatsapp){
 
 document.getElementById("modalName").innerText = name;
 
@@ -343,11 +342,12 @@ document.getElementById("modalDescription").innerText = description;
 document.getElementById("modalImage").src = image;
 
 document.getElementById("modalWhatsapp").href =
-"https://wa.me/" + (whatsapp || "+8801621007916").replace("+","");
+"https://wa.me/" + (whatsapp || "8801621007916").replace("+","");
 
 document.getElementById("productModal").style.display = "flex";
 
 }
+
 
 /*========== CLOSE MODAL ==========*/
 
