@@ -586,7 +586,7 @@ progress.style.width =
 scrolled + "%";
 
 }
-
+});
 /*==========================================
 PART-5C
 DARK MODE
