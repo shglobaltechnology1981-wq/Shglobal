@@ -7,40 +7,25 @@ PART-3A
 /*========== AUTO LOAD PRODUCTS ==========*/
 
 const productContainer = document.getElementById("product-container");
-
-if (productContainer) {
-
-fetch("products.json")
-.then(response => response.json())
-.then(products => {
-
-productContainer.innerHTML = "";
-
-products.forEach(product => {
-
-productContainer.innerHTML += `
-
-<div class="product-card">
-
-<img src="${product.image}" alt="${product.name}">
-
-<h3>${product.name}</h3>
-
-<p><strong>Brand:</strong> ${product.brand}</p>
-
-<p><strong>Category:</strong> ${product.category}</p>
-
-<p>${product.description}</p>
-
 <div class="product-buttons">
 
-<a href="https://wa.me/${(product.whatsapp || '+8801621007916').replace('+','')}"
+<button class="details-btn"
+onclick="showDetails(
+'${product.name}',
+'${product.brand}',
+'${product.category}',
+'${product.description}',
+'${product.image}',
+'${product.whatsapp}'
+)">
+View Details
+</button>
+
+<a href="https://wa.me/${(product.whatsapp || '8801621007916').replace('+','')}"
 target="_blank"
 class="whatsapp-btn">
 WhatsApp
 </a>
-
-</div>
 
 </div>
 
