@@ -123,6 +123,38 @@ function searchProduct(){
 filterProducts();
 
 }
+const galleryContainer = document.getElementById("gallery-container");
+
+if (galleryContainer) {
+
+fetch("products.json")
+.then(res => res.json())
+.then(products => {
+
+galleryContainer.innerHTML = "";
+
+products.forEach(product => {
+
+galleryContainer.innerHTML += `
+<div class="product-card">
+<img src="${product.image}" alt="${product.name}">
+<h3>${product.name}</h3>
+<p>${product.description}</p>
+
+<a href="https://wa.me/${(product.whatsapp || "8801621007916").replace("+","")}"
+class="whatsapp-btn"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+`;
+
+});
+
+});
+
+}
 
 /*========== VIEW DETAILS ==========*/
 
