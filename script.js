@@ -181,13 +181,18 @@ View Details
 }
 
 /*========== VIEW DETAILS ==========*/
+function showDetails(name, brand, category, description, image, whatsapp){
 
-alert(
-"Product : " + name +
-"\nBrand : " + brand +
-"\nCategory : " + category +
-"\n\n" + description
-);
+document.getElementById("modalName").innerText = name;
+document.getElementById("modalBrand").innerText = brand;
+document.getElementById("modalCategory").innerText = category;
+document.getElementById("modalDescription").innerText = description;
+document.getElementById("modalImage").src = image;
+
+document.getElementById("modalWhatsapp").href =
+"https://wa.me/" + (whatsapp || "8801621007916").replace("+","");
+
+document.getElementById("productModal").style.display = "flex";
 
 }
 
