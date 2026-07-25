@@ -162,7 +162,9 @@ onclick="showDetails(
 '${product.name}',
 '${product.brand}',
 '${product.category}',
-'${product.description}'
+'${product.description}',
+'${product.image}',
+'${product.whatsapp}'
 )">
 View Details
 </button>
