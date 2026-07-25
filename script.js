@@ -180,8 +180,6 @@ View Details
 
 /*========== VIEW DETAILS ==========*/
 
-function showDetails(name, brand, category, description){
-
 alert(
 "Product : " + name +
 "\nBrand : " + brand +
