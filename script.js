@@ -34,10 +34,6 @@ productContainer.innerHTML += `
 
 <div class="product-buttons">
 
-<a href="tel:${product.call || '+8801621007917'}" class="call-btn">
-📞 Call
-</a>
-
 <a href="https://wa.me/${(product.whatsapp || '+8801621007916').replace('+','')}"
 target="_blank"
 class="whatsapp-btn">
