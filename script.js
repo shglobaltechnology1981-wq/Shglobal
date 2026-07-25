@@ -342,9 +342,6 @@ document.getElementById("modalDescription").innerText = description;
 
 document.getElementById("modalImage").src = image;
 
-document.getElementById("modalCall").href =
-"tel:" + (call || "+8801621007917");
-
 document.getElementById("modalWhatsapp").href =
 "https://wa.me/" + (whatsapp || "+8801621007916").replace("+","");
 
