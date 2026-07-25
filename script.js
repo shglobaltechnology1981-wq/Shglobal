@@ -139,22 +139,6 @@ if (count) {
     count.innerText = products.length;
 }
 
-galleryContainer.innerHTML = "";
-
-products.forEach(product => {
-
-galleryContainer.innerHTML += `
-
-<div class="product-card">
-
-<img src="${product.image}" alt="${product.name}">
-
-<h3>${product.name}</h3>
-
-<p><strong>Brand:</strong> ${product.brand}</p>
-
-<p><strong>Category:</strong> ${product.category}</p>
-
 <p>${product.description}</p>
 
 <button class="details-btn"
