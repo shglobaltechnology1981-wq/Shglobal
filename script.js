@@ -129,16 +129,15 @@ const galleryContainer = document.getElementById("gallery-container");
 
 if (galleryContainer) {
 
+const count = document.getElementById("productCount");
+
 fetch("products.json")
-  const count = document.getElementById("productCount");
-
-if(count){
-
-count.innerText = products.length;
-
-}
 .then(response => response.json())
 .then(products => {
+
+if (count) {
+    count.innerText = products.length;
+}
 
 galleryContainer.innerHTML = "";
 
