@@ -573,7 +573,7 @@ btn.innerHTML = "☀️ Light Mode";
 btn.innerHTML = "🌙 Dark Mode";
 
 }
-
+}
 /*==========================================
 PART-5D
 VISITOR COUNTER
