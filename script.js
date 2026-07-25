@@ -473,39 +473,7 @@ navigator.clipboard.writeText(name);
 alert("Copied : " + name);
 
 }
-/*==========================================
-PART-4G
-FINAL PRODUCT FUNCTIONS
-==========================================*/
 
-/*========== PRINT PAGE ==========*/
-
-function printProduct(){
-
-window.print();
-
-}
-
-/*========== OPEN IMAGE ==========*/
-
-function openImage(image){
-
-window.open(image,"_blank");
-
-}
-
-/*========== SCROLL TO TOP ==========*/
-
-function goTop(){
-
-window.scrollTo({
-
-top:0,
-behavior:"smooth"
-
-});
-
-}
 /*==========================================
 PART-4G
 FINAL PRODUCT FUNCTIONS
