@@ -556,13 +556,26 @@ behavior:"smooth"
 
 console.log("✅ SH Global Technology Website Loaded Successfully");
 /*========== END ==========*/
+const slides = document.querySelectorAll(".slide");
 
-// Hero Slider
-const slides = document.querySelectorAll(".hero-slider .slide");
 let current = 0;
 
-setInterval(() => {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
-}, 3000);
+if(slides.length){
+
+setInterval(function(){
+
+slides[current].classList.remove("active");
+
+current++;
+
+if(current>=slides.length){
+
+current=0;
+
+}
+
+slides[current].classList.add("active");
+
+},3000);
+
+}
