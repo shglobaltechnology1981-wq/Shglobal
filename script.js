@@ -555,3 +555,26 @@ behavior:"smooth"
 /*========== END ==========*/
 
 console.log("✅ SH Global Technology Website Loaded Successfully");
+const slides = document.querySelectorAll(".slide");
+
+let current = 0;
+
+if(slides.length){
+
+setInterval(function(){
+
+slides[current].classList.remove("active");
+
+current++;
+
+if(current>=slides.length){
+
+current=0;
+
+}
+
+slides[current].classList.add("active");
+
+},3000);
+
+}
