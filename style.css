@@ -1082,71 +1082,63 @@ background:#1da851;
 
 }
 /*================ END OF STYLE.CSS ================*/
- /*================ HERO =================*/
+/*================ HERO SLIDER =================*/
 
 .hero{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-slider{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-slider .slide{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    transition:1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .hero-slider .slide.active{
-    opacity:1;
-}
-
-.overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.45);
-    z-index:1;
+    opacity: 1;
 }
 
 .hero-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:2;
-    text-align:center;
-    width:100%;
-    padding:0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    z-index: 10;
+    color: #ffffff;
 }
 
 .hero-content h1{
-    color:#fff;
-    font-size:60px;
-    margin-bottom:20px;
+    font-size: 52px;
+    margin-bottom: 20px;
 }
 
 .hero-content p{
-    color:#fff;
-    font-size:24px;
-    margin-bottom:30px;
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 
 .hero-content .btn{
-    display:inline-block;
-} 
+    display: inline-block;
+}
